@@ -1,0 +1,8 @@
+# Todo archivo de texto se guarda en el repo como LF, sin importar el SO del autor.
+# 'text=auto' → Git detecta qué archivos son texto; 'eol=lf' → los normaliza a LF.
+* text=auto eol=lf
+
+# Los binarios NO deben ser tocados por la normalización (se corromperían).
+*.png  binary
+*.jpg  binary
+*.xlsx binary

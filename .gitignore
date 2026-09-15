@@ -1,0 +1,11 @@
+# Entorno virtual: intransferible entre SO, se reconstruye desde requirements.txt.
+.venv/
+venv/
+
+# Cache de bytecode de Python (se regenera solo).
+__pycache__/
+*.pyc
+
+# Config local de VS Code: la ruta del intérprete difiere por SO,
+# así que no la compartimos (cada quien selecciona su intérprete, ver README).
+.vscode/
