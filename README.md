@@ -105,3 +105,5 @@ git push origin feature/PRI-3-limpieza
 
 - Luego abres un **Pull Request** de tu rama hacia `develop` en GitHub.
 - El PR requiere **1 aprobación** de un compañero antes de poder mergear.
+
+- EQUIPO 2
