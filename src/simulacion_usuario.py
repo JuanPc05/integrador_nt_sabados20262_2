@@ -1,4 +1,4 @@
-# 7 preparcion la simulacion para ensuciar mis datos    
+""" # 7 preparcion la simulacion para ensuciar mis datos    
 
 # 7.1 FUNCION PARA OBTENER UNA MUESTRA DE LOs datos 
 
@@ -72,4 +72,4 @@ iso=datos_df["fecha_registro"].dt.strftime("%Y-%m-%d %H:%M:%S")
 latino=datos_df["fecha_registro"].dt.strftime("%d/%m/%Y %H:%M")
 datos_df["fecha_registro"]=iso
 filas_elegidas=obtener_muestra(datos_df,0.25)
-datos_df
+datos_df """
