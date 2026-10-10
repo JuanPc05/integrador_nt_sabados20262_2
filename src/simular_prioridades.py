@@ -3,11 +3,13 @@ import uuid
 import pandas as pd
 from faker import Faker
 
+# 1. Sembrar semillas para reproducibilidad
 random.seed(42)
 Faker.seed(42)
 
-FILAS=200
-LOCALE=Faker("es_CO")
+# 2. Constantes iniciales
+FILAS = 200
+LOCALE = Faker("es_CO")
 
 NIVELES = {
     "Critica": 0,
@@ -18,8 +20,11 @@ NIVELES = {
 }
 DIAS = [1, 2, 5, 8, 15]
 
+# 3. Funciones auxiliares
 def obtener_muestra(datos, porcentaje):
-    return datos.sample(frac=porcentaje, random_state=42).index
+    # Se usa randint para variar la semilla en cada llamado,
+    # logrando muestras diferentes cada vez que reutilizamos "filas_elegidas"
+    return datos.sample(frac=porcentaje, random_state=random.randint(0, 999)).index
 
 def escribir_mal_nombre(texto):
     variantes = [texto.upper(), f" {texto.lower()} ", texto.capitalize()]
@@ -29,14 +34,12 @@ def numero_en_palabra(num):
     mapa = {0: "cero", 1: "uno", 2: "dos", 3: "tres", 4: "cuatro"}
     return mapa.get(num, num)
 
-#Funcion principal orquestadora
-
+# 4. Función generadora de datos limpios
 def generar_prioridades(numero_filas):
-    cantidad_duplicas = int(numero_filas  * 0.08)
-    cantidad_unicas = numero_filas - cantidad_duplicas
-
-    datos_limpios=[]
-    for _ in range(cantidad_unicas):
+    datos_limpios = []
+    
+    # Aquí solo nos preocupamos por generar la data perfecta
+    for _ in range(numero_filas):
         nombre = random.choice(list(NIVELES.keys()))
         nivel = NIVELES[nombre]
 
@@ -46,35 +49,52 @@ def generar_prioridades(numero_filas):
             "nivel": nivel,
             "dias_max_respuesta": DIAS[nivel]
         })
+        
+    return datos_limpios
 
-    df = pd.DataFrame(datos_limpios)
+# 5. Función principal para ensuciar los datos simulados
+def ensuciar(datos_df):
+    datos_df = datos_df.copy()
 
-    df["nombre"] = df["nombre"].apply(escribir_mal_nombre)
+    # --- Ensuciar nombres ---
+    datos_df["nombre"] = datos_df["nombre"].apply(escribir_mal_nombre)
 
-    df["nivel"] = df["nivel"].astype("object")
+    # --- Ensuciar niveles ---
+    datos_df["nivel"] = datos_df["nivel"].astype("object")
 
-    idx_nivel_none = obtener_muestra(df, 0.07)
-    df.loc[idx_nivel_none, "nivel"] = None
+    # Reutilizamos la misma variable "filas_elegidas" en lugar de los idx_
+    filas_elegidas = obtener_muestra(datos_df, 0.07)
+    datos_df.loc[filas_elegidas, "nivel"] = None
 
-    idx_nivel_texto = obtener_muestra(df.drop(idx_nivel_none), 0.15)
-    df.loc[idx_nivel_texto, "nivel"] = df.loc[idx_nivel_texto, "nivel"].astype(str)
+    filas_elegidas = obtener_muestra(datos_df, 0.15)
+    datos_df.loc[filas_elegidas, "nivel"] = datos_df.loc[filas_elegidas, "nivel"].astype(str)
 
-    idx_nivel_palabra = obtener_muestra(df.drop(idx_nivel_none).drop(idx_nivel_texto), 0.10)
-    df.loc[idx_nivel_palabra, "nivel"] = df.loc[idx_nivel_palabra, "nivel"].apply(numero_en_palabra)
+    filas_elegidas = obtener_muestra(datos_df, 0.10)
+    datos_df.loc[filas_elegidas, "nivel"] = datos_df.loc[filas_elegidas, "nivel"].apply(numero_en_palabra)
 
-    idx_dias_none = obtener_muestra(df, 0.05)
-    df.loc[idx_dias_none, "dias_max_respuesta"] = None
+    # --- Ensuciar dias_max_respuesta ---
+    filas_elegidas = obtener_muestra(datos_df, 0.05)
+    datos_df.loc[filas_elegidas, "dias_max_respuesta"] = None
 
-    idx_dias_absurdo = obtener_muestra(df.drop(idx_dias_none), 0.03)
-    df.loc[idx_dias_absurdo, "dias_max_respuesta"] = 999                                  
+    filas_elegidas = obtener_muestra(datos_df, 0.03)
+    datos_df.loc[filas_elegidas, "dias_max_respuesta"] = 999                                   
 
-    df_duplicados = df.sample(n=cantidad_duplicas, random_state=42)
-    df_final = pd.concat([df, df_duplicados], ignore_index=True)
+    # --- Agregar filas duplicadas (8% del total) ---
+    cantidad_duplicas = int(len(datos_df) * 0.08)
+    df_duplicados = datos_df.sample(n=cantidad_duplicas, random_state=42)
+    datos_df = pd.concat([datos_df, df_duplicados], ignore_index=True)
 
-    return df_final
+    return datos_df
 
+# 6. Bloque principal (Orquestador)
 if __name__ == "__main__":
-    df = generar_prioridades(FILAS)
-    print("Shape del DataFrame:", df.shape)
-    print("\nPrimeras filas:\n", df.head())
-    print("\nNulos por columna:\n", df.isna().sum())
+    # Generamos la lista y la pasamos a DataFrame
+    lista_datos = generar_prioridades(FILAS)
+    df_limpio = pd.DataFrame(lista_datos) 
+    
+    # Ensuciamos el DataFrame
+    df_sucio = ensuciar(df_limpio)
+    
+    print("Shape del DataFrame:", df_sucio.shape)
+    print("\nPrimeras filas:\n", df_sucio.head())
+    print("\nNulos por columna:\n", df_sucio.isna().sum())
