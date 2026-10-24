@@ -1,0 +1,3002 @@
+[
+  {
+    "id":"3f514ec9-fde7-4e79-8f0d-f5e195931d64",
+    "nombre":"GONZÁLEZ LTD",
+    "nit":"830.999.741-9",
+    "sector":"Agroindustria",
+    "contacto":"Liliana Anaya Narváez",
+    "correo":"carlos15@forero.com",
+    "telefono":"360 688 8718",
+    "activa":true
+  },
+  {
+    "id":"02df63e9-ea69-4a14-85d3-700b6473e3f4",
+    "nombre":"Montoya, Figueroa and Arango",
+    "nit":"3129208751",
+    "sector":" tecnologia ",
+    "contacto":"Patricia Rojas",
+    "correo":"andreamunoz@garcia.net",
+    "telefono":"3458260340",
+    "activa":false
+  },
+  {
+    "id":"b580d437-c9b8-40c7-be25-063f06608e1d",
+    "nombre":"RENTERÍA, JIMÉNEZ AND LOZANO",
+    "nit":"362.948.978-6",
+    "sector":" finanzas ",
+    "contacto":"Vanessa María Gómez",
+    "correo":"karenroa@agudelo.org",
+    "telefono":"+57 354-296-1844",
+    "activa":true
+  },
+  {
+    "id":"3db59149-fbe5-4396-aea3-870bfa9df88f",
+    "nombre":"Bernal-Pérez",
+    "nit":"7146283143",
+    "sector":" salud ",
+    "contacto":null,
+    "correo":"mireyasanchez@rivera-alfonso.com",
+    "telefono":"+57 314-181-8615",
+    "activa":true
+  },
+  {
+    "id":"365ba4fe-f25b-4048-bf37-0f223053476d",
+    "nombre":"LÓPEZ, CHÁVEZ AND CASTAÑO",
+    "nit":"234.016.361-1",
+    "sector":"Turismo",
+    "contacto":"Lina Pardo Fernández",
+    "correo":"wlopez@cordoba.com",
+    "telefono":"302 562 5889",
+    "activa":true
+  },
+  {
+    "id":"68ed2386-7d83-4241-bbae-b057dd2973df",
+    "nombre":"Acosta-Hernández",
+    "nit":"0822269405",
+    "sector":"Construccion",
+    "contacto":"Ruth Laura Cruz Mendoza",
+    "correo":"orlando84@cantillo-guzman.com",
+    "telefono":"3414651113",
+    "activa":true
+  },
+  {
+    "id":"2b87611b-9378-4411-96cf-64399029db32",
+    "nombre":"Pérez Inc",
+    "nit":"148.706.827-7",
+    "sector":" comercio ",
+    "contacto":"Alejandra Natalia Vallejo",
+    "correo":"forerodiego@herrera.net",
+    "telefono":"390 972 8321",
+    "activa":false
+  },
+  {
+    "id":"abd67cb8-4711-4e9d-8dad-f24ee6244202",
+    "nombre":"Villa-Molina",
+    "nit":"067.625.153-8",
+    "sector":"Tecnologia",
+    "contacto":"Milena Daniela Ortiz",
+    "correo":"dazacarlos@caballero.net",
+    "telefono":"+57 307-970-5097",
+    "activa":true
+  },
+  {
+    "id":"b0be14d7-8acc-4cb6-aeb8-8e62fe148465",
+    "nombre":"Jiménez-González",
+    "nit":"5265016731",
+    "sector":"LOGISTICA",
+    "contacto":"Adriana Barreto Rodríguez",
+    "correo":"lorena65@morales-galindo.net",
+    "telefono":"+57 341-772-2560",
+    "activa":true
+  },
+  {
+    "id":"f2bcd7fd-81e4-4819-9506-8b057afa01f5",
+    "nombre":"Loaiza-Blanco",
+    "nit":"134.026.650-2",
+    "sector":" construccion ",
+    "contacto":"Emilia Geraldine Riascos González",
+    "correo":"zcaicedo@forero.biz",
+    "telefono":"3862110225",
+    "activa":true
+  },
+  {
+    "id":"0036660d-da80-4b47-b0ef-4606d1ddd326",
+    "nombre":"Rodríguez, Duque and Martínez",
+    "nit":"569.067.447-1",
+    "sector":"TURISMO",
+    "contacto":"Antonio Sánchez Palacios",
+    "correo":"blancagonzalez@portilla-vargas.biz",
+    "telefono":"337 189 2392",
+    "activa":true
+  },
+  {
+    "id":"7e6ae1c4-2a90-4bf7-aa03-581f9ab20797",
+    "nombre":"GONZÁLEZ GROUP",
+    "nit":"0432609310",
+    "sector":"FINANZAS",
+    "contacto":"Diego Suárez Barrera",
+    "correo":"inesosorio@palacios.com",
+    "telefono":"341 454 5635",
+    "activa":true
+  },
+  {
+    "id":"2e24c400-0db3-4e83-b0e9-da08732d4fee",
+    "nombre":"Díaz Inc",
+    "nit":"0534749162",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Roger Morales",
+    "correo":"martha08@valencia.com",
+    "telefono":"+57 398-953-4396",
+    "activa":false
+  },
+  {
+    "id":"9710d438-8a66-4217-87a9-bbd7d3b89c74",
+    "nombre":"Murcia and Sons",
+    "nit":"910.933.711-8",
+    "sector":"MANUFACTURA",
+    "contacto":"Jesús Felipe Ochoa",
+    "correo":"mariaramirez@amaya.net",
+    "telefono":"3557161768",
+    "activa":false
+  },
+  {
+    "id":"2276c214-989f-4a4c-8613-da13cb5dafd2",
+    "nombre":"Mercado, Pérez and Castro",
+    "nit":"240.903.678-8",
+    "sector":" construccion ",
+    "contacto":"Ana Janeth Flórez",
+    "correo":"rcastillo@diaz.org",
+    "telefono":"+57 339-087-8844",
+    "activa":false
+  },
+  {
+    "id":"2eabe11f-0627-45e8-92c7-11426830397c",
+    "nombre":"JIMÉNEZ LLC",
+    "nit":"812.308.340-2",
+    "sector":"MANUFACTURA",
+    "contacto":"Edilberto Ortiz",
+    "correo":"bedoyatatiana@lozano.com",
+    "telefono":"3955184269",
+    "activa":false
+  },
+  {
+    "id":"d99aef69-eec5-4def-9316-c93e643d5bf9",
+    "nombre":"Valencia-Martínez",
+    "nit":"053.424.089-1",
+    "sector":" comercio ",
+    "contacto":null,
+    "correo":"victortorres@ramirez-mendez.biz",
+    "telefono":"+57 327-365-2717",
+    "activa":false
+  },
+  {
+    "id":"38bf0f44-f97b-4292-88e3-461cd9960cf1",
+    "nombre":"Cruz and Sons",
+    "nit":"3972404226",
+    "sector":" construccion ",
+    "contacto":"María María Vargas Chávez",
+    "correo":"hlopez@bonilla.org",
+    "telefono":"+57 316-601-0023",
+    "activa":true
+  },
+  {
+    "id":"e6fa82bd-b9f1-430a-9c72-6511616fceb8",
+    "nombre":"  Ortiz Ltd  ",
+    "nit":"9001851327",
+    "sector":"CONSTRUCCION",
+    "contacto":"Nicolás Jesús Acosta Vargas",
+    "correo":"antonio10@lopez.com",
+    "telefono":"3862030366",
+    "activa":false
+  },
+  {
+    "id":"19cb4df0-4bf8-48db-8b26-d2e62e80bf81",
+    "nombre":"Romero LLC",
+    "nit":"361.721.314-5",
+    "sector":"Logistica",
+    "contacto":"Natalia Luz Salgado",
+    "correo":"laraalberto@osorio.org",
+    "telefono":"+57 326-249-4514",
+    "activa":false
+  },
+  {
+    "id":"5c74f71c-a20f-4700-b0e1-0b2e400e5e49",
+    "nombre":"DURÁN-SAAVEDRA",
+    "nit":"102.252.677-1",
+    "sector":"Comercio",
+    "contacto":"Nancy Geraldine Castro",
+    "correo":"ruizcarmen@romero-zapata.info",
+    "telefono":"3695236687",
+    "activa":false
+  },
+  {
+    "id":"5b598f70-edc9-47ab-bc38-a5790bb694a9",
+    "nombre":"LOZANO, LOZANO AND PINTO",
+    "nit":"6196893135",
+    "sector":"TECNOLOGIA",
+    "contacto":"Diana Gaitán",
+    "correo":"luis21@vallejo.com",
+    "telefono":"347 286 3330",
+    "activa":true
+  },
+  {
+    "id":"a03217b6-5f67-4931-b64c-237deaa58e0e",
+    "nombre":"Hernández, Burgos and Rueda",
+    "nit":"606.501.917-9",
+    "sector":"EDUCACION",
+    "contacto":"María Morales García",
+    "correo":"rodriguezalvaro@sanchez-diaz.com",
+    "telefono":"3847657041",
+    "activa":true
+  },
+  {
+    "id":"029e2ce5-173c-4d2a-b478-c5f81741d7e1",
+    "nombre":"  Martínez Ltd  ",
+    "nit":"092.820.667-8",
+    "sector":"Manufactura",
+    "contacto":null,
+    "correo":"estelasanchez@guzman.com",
+    "telefono":"3690362891",
+    "activa":false
+  },
+  {
+    "id":"c33e3f12-12a2-400a-b015-f96aa5a36c05",
+    "nombre":"Correa, Álvarez and Bedoya",
+    "nit":"620.563.411-1",
+    "sector":" manufactura ",
+    "contacto":null,
+    "correo":"cecilia11@hurtado.com",
+    "telefono":"+57 383-034-1990",
+    "activa":true
+  },
+  {
+    "id":"718c6bfc-2c22-4941-bcdc-d9f59fcfe741",
+    "nombre":"Ospino, Ramos and Martínez",
+    "nit":"140.546.835-6",
+    "sector":" logistica ",
+    "contacto":"Gildardo Hernando López",
+    "correo":"gtriana@sierra.com",
+    "telefono":"+57 396-790-4227",
+    "activa":false
+  },
+  {
+    "id":"65edfe67-b015-4955-b8cc-1ea74e44367b",
+    "nombre":"Rivas Inc",
+    "nit":"3322889857",
+    "sector":" logistica ",
+    "contacto":"Carolina Mosquera Ordóñez",
+    "correo":"tgomez@giraldo.com",
+    "telefono":"+57 329-710-2481",
+    "activa":false
+  },
+  {
+    "id":"58a9e9bc-d92a-49da-bd01-f37c0eec1f15",
+    "nombre":"López-Álvarez",
+    "nit":"421.495.511-2",
+    "sector":" turismo ",
+    "contacto":"Antonio Felipe Muñoz Pardo",
+    "correo":"gilbertodominguez@gomez-andrade.biz",
+    "telefono":"3692758955",
+    "activa":true
+  },
+  {
+    "id":"64b654ba-3b69-43c0-a204-b4dfbe35649d",
+    "nombre":"CARRILLO PLC",
+    "nit":"7409038021",
+    "sector":"CONSTRUCCION",
+    "contacto":"Eduardo Jaramillo",
+    "correo":"torresomarlopez.info",
+    "telefono":"+57 311-216-6365",
+    "activa":false
+  },
+  {
+    "id":"3ff5e058-6e87-41c8-ad0d-812fc855ba90",
+    "nombre":"  Ruiz PLC  ",
+    "nit":"737.147.082-7",
+    "sector":"Manufactura",
+    "contacto":"Angélica Ruiz Gómez",
+    "correo":"zmartinez@angulo-mantilla.com",
+    "telefono":"+57 303-064-4212",
+    "activa":false
+  },
+  {
+    "id":"e221d363-cc67-4f75-982f-6ad88f63aa08",
+    "nombre":"Castro Inc",
+    "nit":"476.834.201-6",
+    "sector":"CONSTRUCCION",
+    "contacto":"Samir Jesús Ramírez",
+    "correo":"iramos@paez.org",
+    "telefono":"360 893 1992",
+    "activa":false
+  },
+  {
+    "id":"929ac04b-5d28-40a6-b59e-f7f7d229cce9",
+    "nombre":"Vergara-Bravo",
+    "nit":"502.727.516-4",
+    "sector":"EDUCACION",
+    "contacto":"Candelaria Barbosa",
+    "correo":"fernandohenaolopez.biz",
+    "telefono":"382 963 5339",
+    "activa":false
+  },
+  {
+    "id":"2974149b-0a05-4414-9e26-0c2a266bd1b8",
+    "nombre":"ARIAS LLC",
+    "nit":"407.333.373-2",
+    "sector":" educacion ",
+    "contacto":null,
+    "correo":"martha27arias-cortes.com",
+    "telefono":"3866464911",
+    "activa":true
+  },
+  {
+    "id":"dc5a7797-cb11-4f2d-a7bc-605d96826bbd",
+    "nombre":"López Inc",
+    "nit":"961.798.178-9",
+    "sector":"Agroindustria",
+    "contacto":null,
+    "correo":"inescardenas@gonzalez-zuluaga.com",
+    "telefono":"3576605384",
+    "activa":false
+  },
+  {
+    "id":"387ff6ad-47d3-43b8-8d64-229889ff4af5",
+    "nombre":"Cuéllar-Ortiz",
+    "nit":"630.600.025-8",
+    "sector":"Educacion",
+    "contacto":"Enrique Tomás Chacón",
+    "correo":"luisgiraldo@franco.org",
+    "telefono":"362 626 5826",
+    "activa":true
+  },
+  {
+    "id":"bc981e95-80d8-4875-9f4d-d9ab8654ec89",
+    "nombre":"LÓPEZ AND SONS",
+    "nit":"819.648.253-1",
+    "sector":" agroindustria ",
+    "contacto":"María María Fuentes",
+    "correo":"mariatoro@cordoba.com",
+    "telefono":"3752334383",
+    "activa":true
+  },
+  {
+    "id":"2981dd8d-4d95-42fe-9f99-103bf50d340c",
+    "nombre":"Patiño, Serna and Fuentes",
+    "nit":"041.209.117-9",
+    "sector":"SALUD",
+    "contacto":"Luz Isabel Lara",
+    "correo":"garciasantiago@giraldo.com",
+    "telefono":"3617136657",
+    "activa":true
+  },
+  {
+    "id":"828a6971-f9d8-4fdb-b4f1-4133a481c4c6",
+    "nombre":"Díaz Inc",
+    "nit":"2990155799",
+    "sector":"TECNOLOGIA",
+    "contacto":"Ana Villamizar",
+    "correo":"ramirezmaria@delgado.com",
+    "telefono":"351 305 2312",
+    "activa":false
+  },
+  {
+    "id":"81cc006c-d74e-4dc7-90a2-ce0a839f895f",
+    "nombre":"CASTRO-RAMÍREZ",
+    "nit":"1584776863",
+    "sector":"EDUCACION",
+    "contacto":"Juan Pacheco",
+    "correo":"giovanni19@alvarez.info",
+    "telefono":"367 694 5919",
+    "activa":true
+  },
+  {
+    "id":"48de03ac-1ad9-4176-83be-d6e2640fccee",
+    "nombre":"Osorio-Ospina",
+    "nit":"5172084964",
+    "sector":"Salud",
+    "contacto":"Diego Luis Montes",
+    "correo":"wmercado@garcia.com",
+    "telefono":"3525105053",
+    "activa":true
+  },
+  {
+    "id":"31c3cf20-ace6-4d96-9101-0bd06023261c",
+    "nombre":"OSPINA-RUIZ",
+    "nit":"361.721.314-5",
+    "sector":"TECNOLOGIA",
+    "contacto":"Esteban Monroy",
+    "correo":"cordobajorge@tovar.com",
+    "telefono":"3077046117",
+    "activa":true
+  },
+  {
+    "id":"199f0b90-8312-4f26-bca6-9c40166e0f7c",
+    "nombre":"Agudelo PLC",
+    "nit":"6390409074",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Marisol Castillo Triana",
+    "correo":"quinteromaria@lopez-arenas.com",
+    "telefono":"+57 345-561-8579",
+    "activa":false
+  },
+  {
+    "id":"1db169f6-6a50-4505-beeb-cf21eb026472",
+    "nombre":"  Medina Ltd  ",
+    "nit":"7715910300",
+    "sector":"COMERCIO",
+    "contacto":"Luz Ruiz Pacheco",
+    "correo":"ftorres@vanegas.net",
+    "telefono":"3004010414",
+    "activa":true
+  },
+  {
+    "id":"c79cb38d-4fac-42ff-b6a8-b86b56b107c8",
+    "nombre":"Pacheco-Mercado",
+    "nit":"6422971252",
+    "sector":"TURISMO",
+    "contacto":"Leonardo Camacho Guzmán",
+    "correo":"carlosduran@ruiz-ariza.com",
+    "telefono":"+57 314-415-8331",
+    "activa":false
+  },
+  {
+    "id":"c9d0391d-b23b-4d79-83d7-6a310b0d5f0f",
+    "nombre":"Domínguez Inc",
+    "nit":"303.763.715-3",
+    "sector":"CONSTRUCCION",
+    "contacto":"Fabio Alexander Cárdenas",
+    "correo":"edgarlopez@torres.biz",
+    "telefono":"379 836 3146",
+    "activa":true
+  },
+  {
+    "id":"9533444f-ebf2-4180-bdf9-24a802879aa1",
+    "nombre":"Duque PLC",
+    "nit":"1271130724",
+    "sector":" tecnologia ",
+    "contacto":"Leidy Contreras",
+    "correo":"monica81@mejia-sanchez.net",
+    "telefono":"368 507 4510",
+    "activa":false
+  },
+  {
+    "id":"af57eb10-6a53-4773-99a4-8025dd4cde15",
+    "nombre":"Flórez, Chaparro and Ramírez",
+    "nit":"362.948.978-6",
+    "sector":" tecnologia ",
+    "contacto":"Flor Paula Bustos",
+    "correo":"marthalara@ortiz.com",
+    "telefono":"396 661 3473",
+    "activa":true
+  },
+  {
+    "id":"c189a3b3-54c9-4966-8e59-1806507ca7b7",
+    "nombre":"SERNA LLC",
+    "nit":"4940128974",
+    "sector":"Agroindustria",
+    "contacto":null,
+    "correo":"asanchez@ortega.com",
+    "telefono":"312 095 7907",
+    "activa":false
+  },
+  {
+    "id":"7ecedabb-6b43-4222-8919-06a71e23650b",
+    "nombre":"Ortega Inc",
+    "nit":"0943882211",
+    "sector":"Agroindustria",
+    "contacto":"Roberto Quintero",
+    "correo":"igalvis@vergara-munoz.info",
+    "telefono":"3054589714",
+    "activa":false
+  },
+  {
+    "id":"dd1a4fa8-993d-453c-aa4b-78b6c6e3e833",
+    "nombre":"Delgado, Bedoya and Sánchez",
+    "nit":"632.570.396-5",
+    "sector":"Tecnologia",
+    "contacto":"Alicia Diana Pedraza Henao",
+    "correo":"henry87@perez.com",
+    "telefono":"3696443098",
+    "activa":false
+  },
+  {
+    "id":"6bdc19ac-f24e-4ae8-8f2c-9df8ceb82650",
+    "nombre":"Herrera, Ávila and Mejía",
+    "nit":"795.410.727-2",
+    "sector":"EDUCACION",
+    "contacto":"John Vergara",
+    "correo":"derly14@cardenas.com",
+    "telefono":"+57 391-074-0650",
+    "activa":true
+  },
+  {
+    "id":"9ef48618-044f-42b1-a0cb-fe097c33c3dd",
+    "nombre":"  Vargas LLC  ",
+    "nit":"488.214.236-9",
+    "sector":" salud ",
+    "contacto":null,
+    "correo":"edwinhenao@castillo-renteria.com",
+    "telefono":"349 429 6592",
+    "activa":true
+  },
+  {
+    "id":"9e58183c-078e-4dc5-bac0-daccba17d0b9",
+    "nombre":"CASTAÑEDA, VARGAS AND GUERRERO",
+    "nit":"344.149.782-6",
+    "sector":"LOGISTICA",
+    "contacto":"Luis Silva Vélez",
+    "correo":"vilma67@salamanca-restrepo.net",
+    "telefono":"3061294398",
+    "activa":true
+  },
+  {
+    "id":"2f1cecde-b932-4947-9b6b-6b35f0323218",
+    "nombre":"Hernández-Ríos",
+    "nit":"9406260787",
+    "sector":"TURISMO",
+    "contacto":"María Ortiz",
+    "correo":"quinterodiana@ospina-barrios.com",
+    "telefono":"+57 319-803-8287",
+    "activa":false
+  },
+  {
+    "id":"73ff97bf-e964-4a91-b84c-20e255e890c3",
+    "nombre":"Torres Ltd",
+    "nit":"2440793110",
+    "sector":"COMERCIO",
+    "contacto":"Karen González López",
+    "correo":"sandrarodriguezmarin.biz",
+    "telefono":"+57 372-384-9791",
+    "activa":false
+  },
+  {
+    "id":"cbb7d891-0e78-44e1-9a78-ce52ce2cd32a",
+    "nombre":"Sánchez-Rodríguez",
+    "nit":"232.883.774-4",
+    "sector":" finanzas ",
+    "contacto":"Carol Esther Soto",
+    "correo":"zflorez@restrepo.com",
+    "telefono":"+57 304-719-6094",
+    "activa":true
+  },
+  {
+    "id":"5e0dc750-79e5-4317-8bb0-88fe0f6bf9c6",
+    "nombre":"Franco Ltd",
+    "nit":"9705277402",
+    "sector":"COMERCIO",
+    "contacto":"César Ramiro Rojas",
+    "correo":"lmolina@sanchez.info",
+    "telefono":"324 461 7679",
+    "activa":false
+  },
+  {
+    "id":"e67e12a2-2d2e-48a9-b96e-3e9b83bf8c31",
+    "nombre":"Díaz, Blanco and Palacios",
+    "nit":"8425995996",
+    "sector":" construccion ",
+    "contacto":"María Jennifer Pérez",
+    "correo":"vergaramelba@acosta.com",
+    "telefono":"+57 312-661-0941",
+    "activa":true
+  },
+  {
+    "id":"9ad111e5-298b-4da1-b7c1-2cf9bf2bcfeb",
+    "nombre":"SANABRIA INC",
+    "nit":"7590251762",
+    "sector":" logistica ",
+    "contacto":"Diana Esther Duarte Torres",
+    "correo":"katerinecontreras@garcia.com",
+    "telefono":"330 205 6981",
+    "activa":false
+  },
+  {
+    "id":"1d22fa68-3d81-406e-b2c9-2435f107160e",
+    "nombre":"Díaz-Ariza",
+    "nit":"8733978559",
+    "sector":"Salud",
+    "contacto":"Yenny Mendoza Pineda",
+    "correo":"jaramillocarmen@jimenez.org",
+    "telefono":"+57 385-034-4651",
+    "activa":true
+  },
+  {
+    "id":"2233f89b-c423-4d27-a3a6-7a601a2df124",
+    "nombre":"  Bolaños Inc  ",
+    "nit":"8938984690",
+    "sector":"Salud",
+    "contacto":"Margarita Yéssica Bustamante",
+    "correo":"gomezpiedadquintero.com",
+    "telefono":"+57 338-503-7199",
+    "activa":false
+  },
+  {
+    "id":"455c6d43-faf3-42c3-a044-ef6352ce4423",
+    "nombre":"Palacio, Arévalo and Herrera",
+    "nit":"169.918.724-0",
+    "sector":"FINANZAS",
+    "contacto":null,
+    "correo":"yacosta@rodriguez.com",
+    "telefono":"+57 338-960-8706",
+    "activa":false
+  },
+  {
+    "id":"38aaf23b-6c2e-4f80-8238-956973b046a1",
+    "nombre":"Vélez-Osorio",
+    "nit":"6821719553",
+    "sector":"Agroindustria",
+    "contacto":"Óscar Andrés Moreno",
+    "correo":"torresmauricio@jaramillo.com",
+    "telefono":"3010272405",
+    "activa":false
+  },
+  {
+    "id":"40a64181-d1b4-4b21-990d-2c611336b2e5",
+    "nombre":"Agudelo-Naranjo",
+    "nit":"429.671.114-8",
+    "sector":"TECNOLOGIA",
+    "contacto":"Esther Aura Mosquera Ceballos",
+    "correo":"raquelsuarez@patino-jimenez.com",
+    "telefono":"384 588 1056",
+    "activa":true
+  },
+  {
+    "id":"04dd0fa2-948a-4a6a-ade0-27497c08ab3f",
+    "nombre":"Quiroga, Reyes and García",
+    "nit":"2834831520",
+    "sector":" educacion ",
+    "contacto":null,
+    "correo":"rperea@fernandez-suarez.com",
+    "telefono":"+57 304-967-0667",
+    "activa":true
+  },
+  {
+    "id":"b0190593-1492-4c9d-8907-fa9eae99e99d",
+    "nombre":"Torres Group",
+    "nit":"2680408509",
+    "sector":"CONSTRUCCION",
+    "contacto":"Arnulfo Leonel Arrieta",
+    "correo":"rafaelherrera@mejia.com",
+    "telefono":"318 648 7699",
+    "activa":false
+  },
+  {
+    "id":"a70731ed-73f4-4246-b7cb-08aff6c7530b",
+    "nombre":"Muñoz, Olaya and Correa",
+    "nit":"320.441.384-5",
+    "sector":" comercio ",
+    "contacto":"José Castro Ortiz",
+    "correo":"julio90@suarez.com",
+    "telefono":"342 770 7070",
+    "activa":true
+  },
+  {
+    "id":"240901fe-2d87-43d0-a04c-0ace56a9e438",
+    "nombre":"Ramos-Meza",
+    "nit":"3609149851",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Juan Brayan Castro Salas",
+    "correo":"lorenaperez@hoyos.com",
+    "telefono":"+57 387-950-8304",
+    "activa":true
+  },
+  {
+    "id":"472f96a2-d2b5-4fde-bc55-0f764a2390af",
+    "nombre":"Rodríguez-Meza",
+    "nit":"580.935.118-7",
+    "sector":"Logistica",
+    "contacto":"Rocío Paola Valencia",
+    "correo":"pablo61@osorio.org",
+    "telefono":"+57 355-657-4902",
+    "activa":true
+  },
+  {
+    "id":"a928fd4f-84ae-4e0d-be7d-783f76f5557a",
+    "nombre":"Gómez-Granados",
+    "nit":"9019358895",
+    "sector":" turismo ",
+    "contacto":"Liliana Margarita Navarro Sánchez",
+    "correo":"pedrazarichard@ospina.net",
+    "telefono":"3681809788",
+    "activa":false
+  },
+  {
+    "id":"85eb9350-fd70-41f7-a65c-4b42d452d15d",
+    "nombre":"Ruiz-Ramírez",
+    "nit":"9435353751",
+    "sector":"Manufactura",
+    "contacto":"Inés Oliva Peña García",
+    "correo":"carojesus@moreno.com",
+    "telefono":"+57 383-692-9445",
+    "activa":true
+  },
+  {
+    "id":"ed7fe4a6-c1a7-421f-bfe4-fea705dbef97",
+    "nombre":"González-Parra",
+    "nit":"829.732.702-1",
+    "sector":"Salud",
+    "contacto":"Fernando Cortés Granados",
+    "correo":"hernandezmaria@rodriguez-perez.com",
+    "telefono":"328 866 5268",
+    "activa":false
+  },
+  {
+    "id":"d0b3bb02-c142-4c4e-b2ae-fed0a392367a",
+    "nombre":"Amaya Inc",
+    "nit":"5599910157",
+    "sector":"AGROINDUSTRIA",
+    "contacto":null,
+    "correo":"ubermudez@vanegas.net",
+    "telefono":"312 099 5765",
+    "activa":true
+  },
+  {
+    "id":"22481927-4173-49f2-aa2c-865fc7ffa960",
+    "nombre":"  Díaz-Camargo  ",
+    "nit":"4134750988",
+    "sector":" educacion ",
+    "contacto":"Jorge Flórez Uribe",
+    "correo":"mariagarces@rojas.org",
+    "telefono":"3515421447",
+    "activa":false
+  },
+  {
+    "id":"90ab9823-98d3-4229-be75-a819966bf8f4",
+    "nombre":"Torres-Pérez",
+    "nit":"9561337184",
+    "sector":" tecnologia ",
+    "contacto":"María Pabón Olaya",
+    "correo":"mariaroa@arias.org",
+    "telefono":"+57 367-827-4117",
+    "activa":true
+  },
+  {
+    "id":"e685e3ac-ecca-4a17-87bb-39479d1030be",
+    "nombre":"Rincón-García",
+    "nit":"2415131528",
+    "sector":"TURISMO",
+    "contacto":"Fernando Víctor Molina",
+    "correo":"toroeugenia@mejia.net",
+    "telefono":"353 800 3296",
+    "activa":true
+  },
+  {
+    "id":"29ad9910-ab52-4151-9ae5-f3620eda0dfa",
+    "nombre":"Sandoval LLC",
+    "nit":"7272742318",
+    "sector":"Finanzas",
+    "contacto":"María María Velásquez Rojas",
+    "correo":"mariapacheco@rivera.info",
+    "telefono":"382 434 7769",
+    "activa":true
+  },
+  {
+    "id":"9c1242f5-3a28-488a-86a8-a6030e5c7587",
+    "nombre":"RÍOS-JIMÉNEZ",
+    "nit":"3146753612",
+    "sector":" manufactura ",
+    "contacto":"Robert Álvaro Romero Castillo",
+    "correo":"ivanramos@agudelo-pacheco.com",
+    "telefono":"344 836 0854",
+    "activa":true
+  },
+  {
+    "id":"5c465b8e-a3f8-4861-be74-84158046f021",
+    "nombre":"Ruiz, Giraldo and Marín",
+    "nit":"6404735047",
+    "sector":" turismo ",
+    "contacto":"David Pardo Lozano",
+    "correo":"erazodavid@hernandez-montoya.com",
+    "telefono":"361 558 1083",
+    "activa":true
+  },
+  {
+    "id":"94f2bf1c-c50e-4e2b-b82b-8de85172dcc5",
+    "nombre":"Lozano-Bustamante",
+    "nit":"863.425.563-8",
+    "sector":"Turismo",
+    "contacto":"Heidy María Rodríguez Ballesteros",
+    "correo":"sierradario@sanchez.com",
+    "telefono":"333 041 6624",
+    "activa":false
+  },
+  {
+    "id":"9321966c-6b6d-4e8b-bff5-e3b9624cac57",
+    "nombre":"García PLC",
+    "nit":"6008921963",
+    "sector":"Agroindustria",
+    "contacto":"Stiven Salazar",
+    "correo":"suarezirma@ortiz.org",
+    "telefono":"+57 376-461-3684",
+    "activa":false
+  },
+  {
+    "id":"948956fb-daed-4809-8bfd-c5b87fc840c0",
+    "nombre":"Gutiérrez-Narváez",
+    "nit":"8360765817",
+    "sector":"Finanzas",
+    "contacto":"Nancy María Fuentes Cardona",
+    "correo":"plondonoquintero-montes.com",
+    "telefono":"3182379312",
+    "activa":true
+  },
+  {
+    "id":"94ec592e-a6bc-44f5-89cc-902651563625",
+    "nombre":"Garzón-Ortega",
+    "nit":"8179340652",
+    "sector":"Salud",
+    "contacto":"Santiago Francisco Bohórquez",
+    "correo":"eduardo87@sierra.info",
+    "telefono":"+57 378-811-6162",
+    "activa":false
+  },
+  {
+    "id":"f91fef32-0e57-498c-bf01-be62c8378748",
+    "nombre":"Pérez Ltd",
+    "nit":"1237106728",
+    "sector":"Tecnologia",
+    "contacto":"Carlos Ramón Guerrero Rodríguez",
+    "correo":"mejiaelizabeth@ortiz.org",
+    "telefono":"3224839589",
+    "activa":true
+  },
+  {
+    "id":"16adcb1a-7ab1-41ef-bc10-8607da89b23d",
+    "nombre":"ORTEGA-ROJAS",
+    "nit":"522.870.562-2",
+    "sector":"Finanzas",
+    "contacto":"Andrés Elmer Álvarez Díaz",
+    "correo":"montoyavanessa@pineda.com",
+    "telefono":"315 835 0344",
+    "activa":true
+  },
+  {
+    "id":"67c58248-dcaa-49f7-931c-87c294b37ebf",
+    "nombre":"Orozco-Suárez",
+    "nit":"9648831921",
+    "sector":"Salud",
+    "contacto":"Isabel Marcela López Bautista",
+    "correo":"xvalencia@calderon.org",
+    "telefono":"3732033192",
+    "activa":false
+  },
+  {
+    "id":"acae7855-d632-4920-b9ad-705a8c76cced",
+    "nombre":"Pérez Inc",
+    "nit":"5102876754",
+    "sector":"TURISMO",
+    "contacto":"Paola Elena Perdomo",
+    "correo":"hmosqueracontreras-nieto.com",
+    "telefono":"3242687741",
+    "activa":false
+  },
+  {
+    "id":"6dbb12eb-269f-4464-b219-c1a724bf7b60",
+    "nombre":"Maldonado, Arango and Díaz",
+    "nit":"575.639.836-5",
+    "sector":"Comercio",
+    "contacto":"Yuli Barragán Ramírez",
+    "correo":"andres09@valencia-vallejo.com",
+    "telefono":"3809404760",
+    "activa":true
+  },
+  {
+    "id":"818c3877-48b4-4db2-8201-468da295b9d0",
+    "nombre":"Rueda, Castro and Martínez",
+    "nit":"907.977.278-1",
+    "sector":"MANUFACTURA",
+    "contacto":"Rosa Ávila",
+    "correo":"camilodiaz@garcia.com",
+    "telefono":"+57 370-518-4390",
+    "activa":false
+  },
+  {
+    "id":"898bfdc7-e465-45b8-96a8-67303be20c76",
+    "nombre":"Velasco-Miranda",
+    "nit":"529.580.660-1",
+    "sector":" construccion ",
+    "contacto":"Jessica Tatiana Padilla García",
+    "correo":"mgomezpacheco.com",
+    "telefono":"+57 304-485-1579",
+    "activa":true
+  },
+  {
+    "id":"437171b8-6de6-4ed7-b9d9-f0abe16b5ec1",
+    "nombre":"García, Granados and López",
+    "nit":"121.259.020-3",
+    "sector":"Comercio",
+    "contacto":"Miguel Samuel Barbosa",
+    "correo":"fredy32@martinez-rueda.com",
+    "telefono":"342 956 3343",
+    "activa":false
+  },
+  {
+    "id":"05684225-d4c3-4977-a662-79b53900d49b",
+    "nombre":"Gonzáles LLC",
+    "nit":"741.759.558-7",
+    "sector":"FINANZAS",
+    "contacto":"María Palacio Flórez",
+    "correo":"jersonmejia@arrieta.net",
+    "telefono":"3841834374",
+    "activa":true
+  },
+  {
+    "id":"64d7d9a8-2fe1-4e85-86d7-fa3efebbed72",
+    "nombre":"  Caballero PLC  ",
+    "nit":"272.795.596-9",
+    "sector":"TURISMO",
+    "contacto":"Cecilia López",
+    "correo":"gabriel02@acosta-quintero.com",
+    "telefono":"3254278207",
+    "activa":false
+  },
+  {
+    "id":"747847f6-2368-4d55-817f-949419a4fba3",
+    "nombre":"  Cruz, Escobar and Mejía  ",
+    "nit":"6734595764",
+    "sector":"SALUD",
+    "contacto":"Leydi Monsalve",
+    "correo":"salazarivan@castillo.com",
+    "telefono":"3983922501",
+    "activa":false
+  },
+  {
+    "id":"7117616f-bf8e-42d5-b042-fc473cb1cd34",
+    "nombre":"Alzate-Hernández",
+    "nit":"576.270.232-4",
+    "sector":" logistica ",
+    "contacto":"Andrés Moreno",
+    "correo":"shirleyvanegas@duque.com",
+    "telefono":"3725178637",
+    "activa":true
+  },
+  {
+    "id":"2b2cf3c3-cff8-40da-85d7-dfc9f030b3cd",
+    "nombre":"  Rivera, Restrepo and Vargas  ",
+    "nit":"1625265469",
+    "sector":"SALUD",
+    "contacto":"Sebastián Romero Camacho",
+    "correo":"torresalberto@arias.net",
+    "telefono":"309 961 3273",
+    "activa":false
+  },
+  {
+    "id":"a80954b6-da08-4479-8a6d-ae78fd3785d2",
+    "nombre":"  Rojas Group  ",
+    "nit":"156.262.446-7",
+    "sector":" educacion ",
+    "contacto":"Carmen Pedraza",
+    "correo":"claudiacarrillo@restrepo.com",
+    "telefono":"+57 316-025-2986",
+    "activa":false
+  },
+  {
+    "id":"24d61884-b4ca-4bfc-a696-91e6e50e1564",
+    "nombre":"Cárdenas, Reyes and Olaya",
+    "nit":"660.464.197-8",
+    "sector":"Educacion",
+    "contacto":null,
+    "correo":"martha26@ochoa.com",
+    "telefono":"+57 359-438-9760",
+    "activa":false
+  },
+  {
+    "id":"8fcd1723-4f62-4784-903a-3d95aae9c06b",
+    "nombre":"Castro-González",
+    "nit":"7750954654",
+    "sector":" comercio ",
+    "contacto":"Luisa Díaz",
+    "correo":"elvira75@acevedo-hurtado.com",
+    "telefono":"3086321812",
+    "activa":false
+  },
+  {
+    "id":"a5a4b2d0-eff2-4fd1-83d9-7aa9a2bf347b",
+    "nombre":"Sánchez, Rincón and Santos",
+    "nit":"5793897015",
+    "sector":"Salud",
+    "contacto":"José Ricardo Vanegas",
+    "correo":"florezaurelio@quintero.com",
+    "telefono":"+57 366-024-1613",
+    "activa":true
+  },
+  {
+    "id":"fa58f29a-c494-483e-bf72-1e7da4494f88",
+    "nombre":"Muñoz, Suárez and Molina",
+    "nit":"3059736424",
+    "sector":"Tecnologia",
+    "contacto":"Angie Chávez",
+    "correo":"luisa63@ocampo.com",
+    "telefono":"3447951330",
+    "activa":false
+  },
+  {
+    "id":"4f8b8436-4b44-4b4f-ab67-7f433fde98ed",
+    "nombre":"Valencia, Martínez and Gutiérrez",
+    "nit":"979.695.867-8",
+    "sector":"CONSTRUCCION",
+    "contacto":"Carolina Ruiz",
+    "correo":"vsanchez@rojas-benavides.biz",
+    "telefono":"346 091 7851",
+    "activa":false
+  },
+  {
+    "id":"0bf5b46f-f867-49e9-8e32-962fc417cab5",
+    "nombre":"Zambrano PLC",
+    "nit":"544.577.029-9",
+    "sector":"MANUFACTURA",
+    "contacto":"Mercedes Ospina Guerrero",
+    "correo":"espinosaamparo@rincon.com",
+    "telefono":"369 116 3319",
+    "activa":true
+  },
+  {
+    "id":"63611332-9943-425e-8c62-4eed8f9c032c",
+    "nombre":"  Díaz-Pérez  ",
+    "nit":"6865369455",
+    "sector":" educacion ",
+    "contacto":"Vanessa Nubia Barrera",
+    "correo":"jose86@andrade.info",
+    "telefono":"+57 347-226-4085",
+    "activa":true
+  },
+  {
+    "id":"44e74ec8-c10c-4dc5-8e9a-80e703813dc4",
+    "nombre":"Hoyos-Carrillo",
+    "nit":"1696663093",
+    "sector":"EDUCACION",
+    "contacto":null,
+    "correo":"ugarces@vargas.com",
+    "telefono":"3509688327",
+    "activa":false
+  },
+  {
+    "id":"411d0e30-ed7e-41ba-a66e-e92207a2b975",
+    "nombre":"Vanegas-Moreno",
+    "nit":"7352410397",
+    "sector":"Construccion",
+    "contacto":"Antonio Francisco Cerón Bautista",
+    "correo":"hsierra@velasco.com",
+    "telefono":"371 006 8761",
+    "activa":false
+  },
+  {
+    "id":"be6fbc73-5c40-4e6c-8851-4fbc1ea5a969",
+    "nombre":"Yepes-Loaiza",
+    "nit":"8198077046",
+    "sector":"SALUD",
+    "contacto":"Rosa Becerra",
+    "correo":"hosorio@sanchez.org",
+    "telefono":"+57 312-565-2373",
+    "activa":true
+  },
+  {
+    "id":"f5dd5463-9606-4276-b584-49c1ae5cdeee",
+    "nombre":"López-Bedoya",
+    "nit":"1773454757",
+    "sector":" salud ",
+    "contacto":"Julián Hurtado",
+    "correo":"milenagutierrez@cuellar.com",
+    "telefono":"344 294 7742",
+    "activa":false
+  },
+  {
+    "id":"979b3c33-c2fb-4213-8f6f-56cd45de187a",
+    "nombre":"Cifuentes, Hernández and Calderón",
+    "nit":"6430394290",
+    "sector":" agroindustria ",
+    "contacto":"Manuel Palacios",
+    "correo":"kacosta@franco-fernandez.net",
+    "telefono":"358 567 2872",
+    "activa":true
+  },
+  {
+    "id":"fb1ae6fb-75ec-4455-a788-a98834cdd3e4",
+    "nombre":"TRIANA-RODRÍGUEZ",
+    "nit":"153.433.249-1",
+    "sector":"TURISMO",
+    "contacto":"Gloria Ángela Barreto Fajardo",
+    "correo":"jairomorales@castillo.com",
+    "telefono":"3814888107",
+    "activa":false
+  },
+  {
+    "id":"c48cb3cd-afee-4738-8e10-fa535c2fda09",
+    "nombre":"Guzmán, Vargas and Bautista",
+    "nit":"2337209484",
+    "sector":"FINANZAS",
+    "contacto":"Astrid Victoria Alarcón",
+    "correo":"josemartinez@vargas.info",
+    "telefono":"+57 371-805-1371",
+    "activa":true
+  },
+  {
+    "id":"47c389ae-63d2-4714-9159-06ea59a8d6e4",
+    "nombre":"García-Ramírez",
+    "nit":"893.974.909-6",
+    "sector":"Manufactura",
+    "contacto":null,
+    "correo":"qangel@agudelo-rincon.com",
+    "telefono":"3587844483",
+    "activa":false
+  },
+  {
+    "id":"6bee0b2a-481c-4a4a-a9f8-b80d68713461",
+    "nombre":"Castro-Londoño",
+    "nit":"471.270.587-7",
+    "sector":"FINANZAS",
+    "contacto":"Andrea Ochoa Sandoval",
+    "correo":"velandiaraquel@pacheco.com",
+    "telefono":"+57 333-484-5871",
+    "activa":true
+  },
+  {
+    "id":"bba7cb3b-1a35-46d9-9c2f-259f7977c115",
+    "nombre":"Suárez, León and Jaramillo",
+    "nit":"248.762.303-9",
+    "sector":" agroindustria ",
+    "contacto":"Pablo Kevin Patiño Ortiz",
+    "correo":"gilma45@suarez.com",
+    "telefono":"357 469 6606",
+    "activa":true
+  },
+  {
+    "id":"68da41b6-d2fb-45d4-b88e-5306badd04db",
+    "nombre":"Tamayo LLC",
+    "nit":"274.033.445-0",
+    "sector":" turismo ",
+    "contacto":"Alejandro Eduardo Velásquez",
+    "correo":"orlandogarzon@zuluaga-gonzalez.com",
+    "telefono":"3257970673",
+    "activa":true
+  },
+  {
+    "id":"ec3d11b7-db76-41b6-b14d-ac3ac8072bee",
+    "nombre":"Ospino-Orozco",
+    "nit":"010.548.574-1",
+    "sector":"Finanzas",
+    "contacto":"Carlos Germán Valencia Guevara",
+    "correo":"jbravo@jimenez.com",
+    "telefono":"3598488402",
+    "activa":true
+  },
+  {
+    "id":"4fcc79ac-6017-4540-b5aa-98ffe35168b7",
+    "nombre":"  Bohórquez Ltd  ",
+    "nit":"5573257375",
+    "sector":"EDUCACION",
+    "contacto":"Alberto Israel Muñoz",
+    "correo":"hernandezjorge@medina-reyes.com",
+    "telefono":"3808509608",
+    "activa":false
+  },
+  {
+    "id":"456d17b9-c67d-46df-9df1-c22d217e2f50",
+    "nombre":"Angulo-Rincón",
+    "nit":"9511918182",
+    "sector":"Manufactura",
+    "contacto":"Alexandra Cristina Bernal",
+    "correo":"cesarcastaneda@figueroa-restrepo.com",
+    "telefono":"3512957860",
+    "activa":false
+  },
+  {
+    "id":"119cb470-982a-4266-ad11-0f144ef6ba5c",
+    "nombre":"Córdoba-Rodríguez",
+    "nit":"6003562439",
+    "sector":"CONSTRUCCION",
+    "contacto":"Sebastián Pablo Ramírez",
+    "correo":"kevin92@perdomo.com",
+    "telefono":"+57 321-089-0285",
+    "activa":true
+  },
+  {
+    "id":"a8c5b521-ac08-4499-bd12-b0c6faece342",
+    "nombre":"Valencia LLC",
+    "nit":"3334264335",
+    "sector":"Salud",
+    "contacto":"Patricia Maldonado",
+    "correo":"ygonzalez@marin.com",
+    "telefono":"+57 360-776-3369",
+    "activa":true
+  },
+  {
+    "id":"e4284a38-cc16-42b0-ac4e-00726674330e",
+    "nombre":"  López and Sons  ",
+    "nit":"898.123.179-5",
+    "sector":"Finanzas",
+    "contacto":"Camilo Alberto López",
+    "correo":"magaly81@rodriguez-rivera.biz",
+    "telefono":"3615541643",
+    "activa":false
+  },
+  {
+    "id":"a9068a33-bb69-4eed-8b57-9b49e6fc7332",
+    "nombre":"  García, Franco and Giraldo  ",
+    "nit":"7045023290",
+    "sector":" finanzas ",
+    "contacto":null,
+    "correo":"martinezfrancisco@duran.com",
+    "telefono":"3622822512",
+    "activa":false
+  },
+  {
+    "id":"bea48b14-0586-4c9d-9411-c2c43f53712e",
+    "nombre":"Zapata LLC",
+    "nit":"6549500507",
+    "sector":"Construccion",
+    "contacto":"Aura Sánchez",
+    "correo":"ygomez@camargo.com",
+    "telefono":"+57 331-611-7768",
+    "activa":true
+  },
+  {
+    "id":"77c7bfdd-db46-457d-b79e-ea40878897f2",
+    "nombre":"Hernández-Agudelo",
+    "nit":"0477425859",
+    "sector":"Comercio",
+    "contacto":"Daniela Katherine Melo",
+    "correo":"carmenmolina@torres.com",
+    "telefono":"+57 364-913-3424",
+    "activa":false
+  },
+  {
+    "id":"5592f818-e3a0-4cd6-9eb0-50a4de20bec7",
+    "nombre":"Blanco-Restrepo",
+    "nit":"9889425652",
+    "sector":" logistica ",
+    "contacto":"Katherine Vera",
+    "correo":"alzatetomassanchez.com",
+    "telefono":"3265097753",
+    "activa":false
+  },
+  {
+    "id":"56fa66d5-65cc-4d81-a7bb-a9279fa7fec0",
+    "nombre":"Polo, Manrique and Parra",
+    "nit":"379.487.148-5",
+    "sector":"Turismo",
+    "contacto":"Yecid Juan Herrera",
+    "correo":"dfuentes@lopez.com",
+    "telefono":"+57 315-608-2137",
+    "activa":true
+  },
+  {
+    "id":"1d07a5bb-1ad7-4226-bed6-84a9824e390a",
+    "nombre":"González Ltd",
+    "nit":"4254768182",
+    "sector":" construccion ",
+    "contacto":"Steven Rivas Palacios",
+    "correo":"pedrotorres@ramirez.com",
+    "telefono":"3892988085",
+    "activa":true
+  },
+  {
+    "id":"7d07ca46-d0c6-47b9-91fa-6b11eef64687",
+    "nombre":"Moreno, Erazo and Contreras",
+    "nit":"521.293.289-6",
+    "sector":"Educacion",
+    "contacto":"Isabel Carol Núñez Jiménez",
+    "correo":"dsantos@hernandez-rico.com",
+    "telefono":"3148439910",
+    "activa":false
+  },
+  {
+    "id":"3b07b90b-8645-44f1-bdfe-f68e1b844a46",
+    "nombre":"HERNÁNDEZ-RAMOS",
+    "nit":"236.266.933-5",
+    "sector":"TECNOLOGIA",
+    "contacto":"Martha Emilia Hernández",
+    "correo":"vgonzalez@barbosa.com",
+    "telefono":"3501848197",
+    "activa":false
+  },
+  {
+    "id":"3a403e85-53cb-43f9-9bf7-e719e3b771c6",
+    "nombre":"Durán LLC",
+    "nit":"1897215406",
+    "sector":" comercio ",
+    "contacto":"Luis Correa",
+    "correo":"germanaguirre@uribe-torres.com",
+    "telefono":"319 953 7660",
+    "activa":false
+  },
+  {
+    "id":"1442462d-5607-4229-847c-2218b8857b0c",
+    "nombre":"López, Solano and Benítez",
+    "nit":"448.564.510-1",
+    "sector":"COMERCIO",
+    "contacto":"Antonio Mauricio Vega Soto",
+    "correo":"bolivaraugusto@londono-velasco.biz",
+    "telefono":"3986091919",
+    "activa":false
+  },
+  {
+    "id":"38d0b4db-f612-4fe5-b66c-e4b1e40b55a8",
+    "nombre":"GONZÁLEZ AND SONS",
+    "nit":"5996605779",
+    "sector":" comercio ",
+    "contacto":"Heidy Guerra",
+    "correo":"bcamachoospina.com",
+    "telefono":"+57 314-607-4555",
+    "activa":false
+  },
+  {
+    "id":"21e3a7d4-842d-4e94-8604-0b4ec3044540",
+    "nombre":"Castro Inc",
+    "nit":"5742388565",
+    "sector":"Turismo",
+    "contacto":"Rubiela Zuluaga Quintero",
+    "correo":"valentinasuarez@lopez.com",
+    "telefono":"363 475 5752",
+    "activa":true
+  },
+  {
+    "id":"1f9b9d37-a3bd-4c42-9552-a5011f3eb01c",
+    "nombre":"Ruiz Inc",
+    "nit":"3948848826",
+    "sector":" manufactura ",
+    "contacto":"Diana María Carvajal",
+    "correo":"jmelo@herrera.biz",
+    "telefono":"+57 314-991-5370",
+    "activa":false
+  },
+  {
+    "id":"0ef4aa89-ecb3-44a3-96dd-e8290338fe21",
+    "nombre":"Vásquez Ltd",
+    "nit":"407.333.373-2",
+    "sector":"Turismo",
+    "contacto":"Milena Alfonso",
+    "correo":"avelasco@caicedo.net",
+    "telefono":"+57 396-964-5465",
+    "activa":true
+  },
+  {
+    "id":"1ac2fdef-1db4-4973-8330-de2e811ff13a",
+    "nombre":"Maldonado-Cuesta",
+    "nit":"5851253892",
+    "sector":"CONSTRUCCION",
+    "contacto":"Jackeline Socorro Palacios",
+    "correo":"glozano@torres.net",
+    "telefono":"+57 337-490-7977",
+    "activa":false
+  },
+  {
+    "id":"cac68193-4a1a-4dd1-9a82-abc8fe1e42df",
+    "nombre":"MEJÍA, POSADA AND PÉREZ",
+    "nit":"8780572151",
+    "sector":"Educacion",
+    "contacto":"Julián Erazo",
+    "correo":"foreroconcepcion@cabrera.info",
+    "telefono":"3484539862",
+    "activa":false
+  },
+  {
+    "id":"83c0bf08-6380-4803-91b3-9e2b3e978c93",
+    "nombre":"PUENTES, FERNÁNDEZ AND ALVARADO",
+    "nit":"905.911.918-6",
+    "sector":" comercio ",
+    "contacto":"Victoria Vargas Agudelo",
+    "correo":"fredygomez@padilla-quintero.com",
+    "telefono":"+57 369-666-7252",
+    "activa":false
+  },
+  {
+    "id":"ba2061ce-9d18-4fc8-8261-cfa9c529a459",
+    "nombre":"Álvarez and Sons",
+    "nit":"6471246335",
+    "sector":"Construccion",
+    "contacto":"Carolina Janeth Silva",
+    "correo":"cuellarluz@martinez.net",
+    "telefono":"+57 300-564-0995",
+    "activa":true
+  },
+  {
+    "id":"f07709fb-0715-4647-a80a-e6cc701e1eb7",
+    "nombre":"Arteaga and Sons",
+    "nit":"9728351295",
+    "sector":" comercio ",
+    "contacto":"Cindy Toro Cuéllar",
+    "correo":"joseaguilar@gomez-gomez.net",
+    "telefono":"+57 314-415-2982",
+    "activa":false
+  },
+  {
+    "id":"ac6d96c2-8a09-4b8a-9084-783e00d13676",
+    "nombre":"Zapata PLC",
+    "nit":"2957867181",
+    "sector":"Manufactura",
+    "contacto":"Antonio Carlos Salamanca",
+    "correo":"zdiaz@mosquera.org",
+    "telefono":"318 158 9988",
+    "activa":false
+  },
+  {
+    "id":"6e60845b-2d73-439c-b3e6-328cd8057619",
+    "nombre":"Uribe-Franco",
+    "nit":"452.734.666-6",
+    "sector":"Comercio",
+    "contacto":"Esther Esther Ruiz",
+    "correo":"tleon@angel-fuentes.com",
+    "telefono":"3803149982",
+    "activa":true
+  },
+  {
+    "id":"f1819a8c-7d19-4a21-baae-abbacda6f3d5",
+    "nombre":"  Álvarez, Martínez and Gómez  ",
+    "nit":"4635806882",
+    "sector":"TURISMO",
+    "contacto":"Héctor José Rojas",
+    "correo":"oquiroga@ruiz.org",
+    "telefono":"3900631403",
+    "activa":true
+  },
+  {
+    "id":"2d185579-cea3-4161-bec8-310a853d391a",
+    "nombre":"Aguilar, Serrano and Bustamante",
+    "nit":"6356022939",
+    "sector":" turismo ",
+    "contacto":"Alex Salazar",
+    "correo":"adriana46@rodriguez.com",
+    "telefono":"374 906 0723",
+    "activa":true
+  },
+  {
+    "id":"fd28d8ce-ad90-4e09-b4a5-6649ceb4f71f",
+    "nombre":"Henao Inc",
+    "nit":"271.285.246-4",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Jorge Jaramillo",
+    "correo":"ochoadary@quiroga.info",
+    "telefono":"+57 332-807-7113",
+    "activa":true
+  },
+  {
+    "id":"8d6c1231-8c9a-4fa5-ba0e-6344eb12fc9d",
+    "nombre":"  Roa and Sons  ",
+    "nit":"1136957279",
+    "sector":" construccion ",
+    "contacto":"Vanessa Mora",
+    "correo":"sebastianvanegas@jaramillo.com",
+    "telefono":"342 573 0662",
+    "activa":true
+  },
+  {
+    "id":"734745ea-0546-4d6e-be85-d8a273b9c366",
+    "nombre":"Mora-Torres",
+    "nit":"357.071.398-4",
+    "sector":" construccion ",
+    "contacto":"Patricia Alfonso Martínez",
+    "correo":"penaandres@camargo.com",
+    "telefono":"321 306 0906",
+    "activa":false
+  },
+  {
+    "id":"4afd4be7-b828-4b86-b3a1-e283fb7910e8",
+    "nombre":"González, Torres and Méndez",
+    "nit":"9810796496",
+    "sector":" salud ",
+    "contacto":"Edward David Rincón Vargas",
+    "correo":"jacosta@montoya-mosquera.com",
+    "telefono":"3426425064",
+    "activa":false
+  },
+  {
+    "id":"b288dca8-60c4-4356-b181-5b65ae01175d",
+    "nombre":"  Gómez Group  ",
+    "nit":"836.253.666-7",
+    "sector":"CONSTRUCCION",
+    "contacto":"Daniel Jhon Morales Valencia",
+    "correo":"hhernandez@vargas.com",
+    "telefono":"3939578654",
+    "activa":true
+  },
+  {
+    "id":"4741633d-8323-48a9-aaf4-edd97e15911c",
+    "nombre":"Medina Group",
+    "nit":"1874960335",
+    "sector":"MANUFACTURA",
+    "contacto":"Sofía Cuesta Mejía",
+    "correo":"nrodriguez@ospina-perez.org",
+    "telefono":"326 932 6573",
+    "activa":true
+  },
+  {
+    "id":"4e26ab0d-dbc3-44b3-a1dc-37b2bb0572d0",
+    "nombre":"Hernández, Granados and Ruiz",
+    "nit":"980.111.000-5",
+    "sector":"MANUFACTURA",
+    "contacto":"Lucía Susana Ramírez",
+    "correo":"anibalalvarez@morales.org",
+    "telefono":"+57 377-524-4182",
+    "activa":true
+  },
+  {
+    "id":"e37eefd6-fd9c-40fb-b517-1d25d354d2f1",
+    "nombre":"Pérez Inc",
+    "nit":"8962887431",
+    "sector":"FINANZAS",
+    "contacto":"Elvia López Gómez",
+    "correo":"eortega@castaneda.com",
+    "telefono":"3799270795",
+    "activa":false
+  },
+  {
+    "id":"990669e0-9ff7-46c2-b663-160e05e08a5f",
+    "nombre":"Ojeda-Murcia",
+    "nit":"1229462135",
+    "sector":"SALUD",
+    "contacto":"Guillermo Núñez",
+    "correo":"mosquerajader@rodriguez-naranjo.biz",
+    "telefono":"+57 325-438-4807",
+    "activa":false
+  },
+  {
+    "id":"55cc9163-0664-4b13-9c41-04ea7f8ed33c",
+    "nombre":"Espitia-Martínez",
+    "nit":"3447650471",
+    "sector":"TURISMO",
+    "contacto":"Iván Carlos Mantilla",
+    "correo":"galvismaria@ramirez-correa.biz",
+    "telefono":"3046558665",
+    "activa":false
+  },
+  {
+    "id":"2a1aa7f3-a194-47ec-804e-12ab308d1525",
+    "nombre":"Valderrama Ltd",
+    "nit":"483.744.171-5",
+    "sector":"Turismo",
+    "contacto":"María Patricia Castellanos",
+    "correo":"patriciaarias@cordoba.com",
+    "telefono":"+57 310-059-1297",
+    "activa":false
+  },
+  {
+    "id":"7d5b1210-3cb7-40e4-9b56-a64bf1a9d2ba",
+    "nombre":"ARBOLEDA, SERNA AND LÓPEZ",
+    "nit":"102.312.110-6",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Sandra Clara Giraldo Pineda",
+    "correo":"deliaramirez@calderon-diaz.com",
+    "telefono":"+57 390-728-0123",
+    "activa":false
+  },
+  {
+    "id":"a9379be9-40cb-40d8-b82f-21670ec50337",
+    "nombre":"Sánchez-Ríos",
+    "nit":"311.325.326-9",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Francisco Mora",
+    "correo":"marina45@moreno.com",
+    "telefono":"+57 342-101-7509",
+    "activa":true
+  },
+  {
+    "id":"f4202331-5fbb-407a-8be2-42fe2dd65dba",
+    "nombre":"García-Cabrera",
+    "nit":"701.595.919-4",
+    "sector":" comercio ",
+    "contacto":"Daniel Alfredo Ramos",
+    "correo":"fsuarez@vasquez-sarmiento.com",
+    "telefono":"392 056 7756",
+    "activa":true
+  },
+  {
+    "id":"2d2a791f-b9a5-4678-a7cc-2c4553cb67e0",
+    "nombre":"SALAS-RESTREPO",
+    "nit":"226.602.562-6",
+    "sector":" salud ",
+    "contacto":"José Johan Durán",
+    "correo":"luciamonroy@lopez.info",
+    "telefono":"3245307624",
+    "activa":true
+  },
+  {
+    "id":"346b9f7a-d822-47a0-9bac-21007e7a1481",
+    "nombre":"Castro, Díaz and Calderón",
+    "nit":"766.270.511-5",
+    "sector":" comercio ",
+    "contacto":"Ricardo Carlos Delgado Zapata",
+    "correo":"martarodriguezbarrera-quintero.com",
+    "telefono":"+57 396-919-2845",
+    "activa":true
+  },
+  {
+    "id":"45b8b3ca-015c-447e-94e8-bf6f6f1cace5",
+    "nombre":"  Arias, Pacheco and Hernández  ",
+    "nit":"971.075.633-5",
+    "sector":"TURISMO",
+    "contacto":null,
+    "correo":"jmesa@escobar-valencia.com",
+    "telefono":"+57 325-939-9337",
+    "activa":true
+  },
+  {
+    "id":"50a0171f-6c16-4b60-a0be-290b9cc7f668",
+    "nombre":"Correa, Rodríguez and Palacios",
+    "nit":"162.951.877-9",
+    "sector":" turismo ",
+    "contacto":"Andrés Giraldo",
+    "correo":"dariocastromorales.info",
+    "telefono":"333 055 9782",
+    "activa":false
+  },
+  {
+    "id":"22226618-dfe4-4f63-b170-283a9cbcf451",
+    "nombre":"ARTEAGA-REYES",
+    "nit":"5983399140",
+    "sector":"Comercio",
+    "contacto":null,
+    "correo":"jimenezadriana@rodriguez-arango.biz",
+    "telefono":"315 727 6829",
+    "activa":false
+  },
+  {
+    "id":"6ba0c5c5-c3d9-4659-b9c2-a5e1cb42bbfa",
+    "nombre":"Uribe-González",
+    "nit":"4743974292",
+    "sector":"Salud",
+    "contacto":"Bryan Luis Salas",
+    "correo":"uarias@rivera.com",
+    "telefono":"+57 362-590-4599",
+    "activa":true
+  },
+  {
+    "id":"bf5ae8e2-46cb-4229-b184-0c0121a04d19",
+    "nombre":"Nieto Inc",
+    "nit":"2711221823",
+    "sector":" salud ",
+    "contacto":"Myriam Yury Quintero",
+    "correo":"eherrera@castillo-martinez.biz",
+    "telefono":"+57 362-813-7214",
+    "activa":false
+  },
+  {
+    "id":"afc9e465-8ed2-4f7c-9936-a4d72a52815b",
+    "nombre":"MORENO LTD",
+    "nit":"800.370.033-2",
+    "sector":" logistica ",
+    "contacto":"Tatiana Ruiz Tovar",
+    "correo":"wrodriguez@rincon-camacho.biz",
+    "telefono":"3810390339",
+    "activa":true
+  },
+  {
+    "id":"b2bb0d89-837f-417b-bd18-dc507dd3f453",
+    "nombre":"Rodríguez-Narváez",
+    "nit":"958.263.280-9",
+    "sector":"CONSTRUCCION",
+    "contacto":"Fernando Arias",
+    "correo":"mperez@munoz.biz",
+    "telefono":"3147079863",
+    "activa":false
+  },
+  {
+    "id":"88d1112d-be4e-4d81-938c-61cdcee319e3",
+    "nombre":"González Group",
+    "nit":"1339439457",
+    "sector":" finanzas ",
+    "contacto":"Paula Torres",
+    "correo":"marina04@rojas.com",
+    "telefono":"337 657 6927",
+    "activa":false
+  },
+  {
+    "id":"f5eb7349-b48f-496b-a4bb-3fa911ddd0b6",
+    "nombre":"Londoño-Gutiérrez",
+    "nit":"319.100.900-4",
+    "sector":" turismo ",
+    "contacto":"Lucía Flórez",
+    "correo":"dianamorales@ramirez.com",
+    "telefono":"346 040 1424",
+    "activa":true
+  },
+  {
+    "id":"85709e66-723b-45ed-b221-b981458664fe",
+    "nombre":"Granados-Murcia",
+    "nit":"310.720.113-7",
+    "sector":" comercio ",
+    "contacto":"Fernando Narváez",
+    "correo":"smartinez@rojas.biz",
+    "telefono":"3007676209",
+    "activa":true
+  },
+  {
+    "id":"fbff0518-1223-493d-b97e-d5f41df47a8b",
+    "nombre":"Hoyos LLC",
+    "nit":"4734043370",
+    "sector":" construccion ",
+    "contacto":"Xiomara Perea",
+    "correo":"svelasquez@mercado-forero.com",
+    "telefono":"3451957782",
+    "activa":true
+  },
+  {
+    "id":"4aba51fb-6c39-4f92-b870-1158a797a43d",
+    "nombre":"Navarro-Arias",
+    "nit":"8825562965",
+    "sector":"MANUFACTURA",
+    "contacto":"Brian Brayan Sánchez Sandoval",
+    "correo":"agil@salamanca-garcia.com",
+    "telefono":"3255778205",
+    "activa":false
+  },
+  {
+    "id":"4f95aeeb-da12-458c-a831-bccd035a1955",
+    "nombre":"Prada, Riascos and Sánchez",
+    "nit":"5829236161",
+    "sector":"SALUD",
+    "contacto":"Beatriz Escobar",
+    "correo":"ignacio23@blanco.com",
+    "telefono":"3868639561",
+    "activa":true
+  },
+  {
+    "id":"12e586de-9f0b-4232-85e6-cb960df980ba",
+    "nombre":"Bedoya Group",
+    "nit":"230.817.214-3",
+    "sector":" educacion ",
+    "contacto":"Jesús Rojas Henao",
+    "correo":"mariagomez@rojas.com",
+    "telefono":"+57 314-716-5609",
+    "activa":false
+  },
+  {
+    "id":"3391722e-265e-4001-8f46-cf11b3a9064e",
+    "nombre":"Herrera-Rivera",
+    "nit":"469.979.907-0",
+    "sector":"Manufactura",
+    "contacto":"Alexander José Bermúdez Prieto",
+    "correo":"xgallegosalazar.org",
+    "telefono":"+57 357-060-7174",
+    "activa":false
+  },
+  {
+    "id":"76b6e20a-66d3-4c07-8804-da4de2e2ec32",
+    "nombre":"López, Vargas and Serrano",
+    "nit":"1765397054",
+    "sector":"CONSTRUCCION",
+    "contacto":"Alberto Camilo Rodríguez Hernández",
+    "correo":"rubiohilda@diaz.net",
+    "telefono":"+57 304-918-7274",
+    "activa":true
+  },
+  {
+    "id":"8e3cccb8-6118-4f17-8dd0-48ed5fb095f6",
+    "nombre":"  Gómez PLC  ",
+    "nit":"561.213.773-0",
+    "sector":"Agroindustria",
+    "contacto":"Sergio Arévalo Espitia",
+    "correo":"lgomez@herrera.org",
+    "telefono":"373 711 2229",
+    "activa":false
+  },
+  {
+    "id":"a0b9a2ef-10ad-47ce-9723-67a6ebf5d459",
+    "nombre":"Rodríguez, Zapata and Alzate",
+    "nit":"608.581.670-4",
+    "sector":"COMERCIO",
+    "contacto":"Jaime Salazar Martínez",
+    "correo":"henry57@palacios-vargas.com",
+    "telefono":"3102192378",
+    "activa":false
+  },
+  {
+    "id":"945a1622-a796-44eb-9ca2-438e88c68bbd",
+    "nombre":"Velásquez-Acosta",
+    "nit":"2961803324",
+    "sector":"SALUD",
+    "contacto":"Katherine Giraldo Arias",
+    "correo":"gonzalezenriquecontreras.com",
+    "telefono":"+57 337-337-7731",
+    "activa":false
+  },
+  {
+    "id":"c4aead8a-5c19-47b6-bc0f-a2a3072bc319",
+    "nombre":"Giraldo Ltd",
+    "nit":"812.282.178-1",
+    "sector":" construccion ",
+    "contacto":"Paola Gallego Villa",
+    "correo":"ramon46@espinosa.com",
+    "telefono":"3603567932",
+    "activa":false
+  },
+  {
+    "id":"56b868eb-8b71-4cae-87dc-4eeae7032152",
+    "nombre":"GARZÓN-MERCADO",
+    "nit":"623.984.716-9",
+    "sector":"SALUD",
+    "contacto":"Laura Londoño",
+    "correo":"ivangomez@medina-restrepo.com",
+    "telefono":"3489547876",
+    "activa":false
+  },
+  {
+    "id":"d123fae6-f64b-4d5e-9bec-7ceb45b3770d",
+    "nombre":"Fernández, Londoño and Carrillo",
+    "nit":"992.751.758-8",
+    "sector":"TECNOLOGIA",
+    "contacto":"Carmen Marcela Ortiz",
+    "correo":"juan35@fajardo-ospina.com",
+    "telefono":"343 586 4496",
+    "activa":true
+  },
+  {
+    "id":"e50cda82-c275-47f6-a8e0-27d9dec7dc07",
+    "nombre":"Navarro, Solano and Naranjo",
+    "nit":"2435885379",
+    "sector":"TECNOLOGIA",
+    "contacto":null,
+    "correo":"adrianaangulo@diaz-jaimes.info",
+    "telefono":"+57 353-674-9785",
+    "activa":false
+  },
+  {
+    "id":"d22d776e-07e9-4137-a56f-9c83506fe992",
+    "nombre":"Muñoz Inc",
+    "nit":"4168601347",
+    "sector":" salud ",
+    "contacto":"Fidel Iván Pinto Palacios",
+    "correo":"dramirez@mendez-rincon.com",
+    "telefono":"+57 376-651-2215",
+    "activa":true
+  },
+  {
+    "id":"dfba7f24-5cea-4c02-95d7-c6b7c7a5b672",
+    "nombre":"  Gómez Inc  ",
+    "nit":"4188421630",
+    "sector":" logistica ",
+    "contacto":"María Quintero",
+    "correo":"amparo33@beltran.com",
+    "telefono":"3853208953",
+    "activa":true
+  },
+  {
+    "id":"ec133587-de25-493b-8979-6334a1089ab4",
+    "nombre":"Cifuentes Group",
+    "nit":"389.021.994-7",
+    "sector":" agroindustria ",
+    "contacto":"Luz Deisy Torres",
+    "correo":"lleon@castro.com",
+    "telefono":"+57 346-996-7331",
+    "activa":true
+  },
+  {
+    "id":"d922625f-5115-43dd-b622-88496ffadc6b",
+    "nombre":"Parra Group",
+    "nit":"7269608437",
+    "sector":"COMERCIO",
+    "contacto":"Johan Silva Ruiz",
+    "correo":"ypalacios@calderon-arias.com",
+    "telefono":"+57 396-263-3556",
+    "activa":false
+  },
+  {
+    "id":"a3ee6ec0-bd11-42cc-8257-fb8d1a763fca",
+    "nombre":"Vargas-Jiménez",
+    "nit":"3697093170",
+    "sector":"Construccion",
+    "contacto":"Julián Mosquera Rodríguez",
+    "correo":"bvanegas@mendoza.com",
+    "telefono":"3454722398",
+    "activa":true
+  },
+  {
+    "id":"e6ee8810-4197-4b06-a879-2e4a3447b27e",
+    "nombre":"Contreras, Ramírez and Gómez",
+    "nit":"650.312.198-0",
+    "sector":"Finanzas",
+    "contacto":"Andrés Montenegro",
+    "correo":"jsanchez@castro-ceballos.com",
+    "telefono":"3642813190",
+    "activa":true
+  },
+  {
+    "id":"9c8870d8-3a85-4697-ab70-dedae1951b5e",
+    "nombre":"Hoyos, Páez and Posada",
+    "nit":"248.762.303-9",
+    "sector":" educacion ",
+    "contacto":"María Luz Figueroa",
+    "correo":"andrespatinoochoa.com",
+    "telefono":"330 524 8088",
+    "activa":false
+  },
+  {
+    "id":"dc924b24-8141-45a0-8a0e-54645e4f94de",
+    "nombre":"  Medina and Sons  ",
+    "nit":"0722395947",
+    "sector":"Finanzas",
+    "contacto":"Lorena Maritza Forero Pérez",
+    "correo":"martinezmyriam@gutierrez.info",
+    "telefono":"+57 368-868-7859",
+    "activa":true
+  },
+  {
+    "id":"4c88d939-2304-4fd5-bb47-92cade6f0640",
+    "nombre":"PINZÓN, ZAMBRANO AND ESPINOSA",
+    "nit":"862.872.031-9",
+    "sector":"Turismo",
+    "contacto":"Marco Luis Rentería",
+    "correo":"xrivera@alvarez.com",
+    "telefono":"3362792463",
+    "activa":true
+  },
+  {
+    "id":"b991cb60-b113-4082-bb5f-82386596faad",
+    "nombre":"Rodríguez and Sons",
+    "nit":"7476775372",
+    "sector":" construccion ",
+    "contacto":"Edilson Vargas Sánchez",
+    "correo":"jimenezluz@chavez-murcia.biz",
+    "telefono":"+57 319-458-8707",
+    "activa":false
+  },
+  {
+    "id":"80ae175f-7f80-4763-b1cc-ef0d9bccf271",
+    "nombre":"Romero and Sons",
+    "nit":"482.012.840-0",
+    "sector":"FINANZAS",
+    "contacto":"Valentina Rosa Cardona Quintero",
+    "correo":"uromero@morales-meneses.org",
+    "telefono":"+57 317-768-0898",
+    "activa":true
+  },
+  {
+    "id":"3e441f6e-fb7d-4407-98dc-ed296cf2f8c3",
+    "nombre":"Molano and Sons",
+    "nit":"657.422.319-6",
+    "sector":" logistica ",
+    "contacto":"Jhon Gómez",
+    "correo":"maria23@jaramillo-guerrero.com",
+    "telefono":"3689430120",
+    "activa":true
+  },
+  {
+    "id":"45387c7f-2c0b-4574-b33f-12ee2d95226f",
+    "nombre":"Bonilla-Mesa",
+    "nit":"372.711.759-5",
+    "sector":"MANUFACTURA",
+    "contacto":"Bryan Antonio Velásquez Campo",
+    "correo":"fernando58@soto.org",
+    "telefono":"+57 384-933-0674",
+    "activa":true
+  },
+  {
+    "id":"f6dc20aa-45d7-4ad9-8429-6ccde044cedb",
+    "nombre":"Ballesteros-Suárez",
+    "nit":"609.441.283-3",
+    "sector":" turismo ",
+    "contacto":null,
+    "correo":"jessica66@valencia.info",
+    "telefono":"+57 315-066-6267",
+    "activa":true
+  },
+  {
+    "id":"f604f31f-8b3e-44d0-abb9-54320ee55690",
+    "nombre":"Quintero LLC",
+    "nit":"1437769366",
+    "sector":"Agroindustria",
+    "contacto":"Isabel Viviana Pérez Pérez",
+    "correo":"juan11@garcia.com",
+    "telefono":"328 671 2007",
+    "activa":true
+  },
+  {
+    "id":"3310a7a9-6758-467b-8e13-1dbeec892a73",
+    "nombre":"Gómez LLC",
+    "nit":"5591024510",
+    "sector":" comercio ",
+    "contacto":"Ibeth Viviana Pinto",
+    "correo":"dariotriana@gonzalez-vega.org",
+    "telefono":"+57 381-942-1794",
+    "activa":false
+  },
+  {
+    "id":"efca6738-ef24-4dbf-8fe6-f3fa29b0dbae",
+    "nombre":"FRANCO LTD",
+    "nit":"8179340652",
+    "sector":"Logistica",
+    "contacto":"Anderson Manuel Palacios Jiménez",
+    "correo":"pguerrero@soto-rojas.info",
+    "telefono":"322 010 9121",
+    "activa":false
+  },
+  {
+    "id":"39b1fff0-b3c0-448e-93e8-954697ac27e3",
+    "nombre":"Hernández-Vanegas",
+    "nit":"455.937.661-8",
+    "sector":" salud ",
+    "contacto":"Eder Rojas",
+    "correo":"xhoyos@giraldo.com",
+    "telefono":"300 462 7765",
+    "activa":false
+  },
+  {
+    "id":"c7b47328-996b-4437-a19a-20d332224d6a",
+    "nombre":"Hernández-Valencia",
+    "nit":"659.202.461-7",
+    "sector":"CONSTRUCCION",
+    "contacto":"Carlos Libardo Moreno",
+    "correo":"myepes@diaz.com",
+    "telefono":"3595501783",
+    "activa":false
+  },
+  {
+    "id":"bb760f68-fbec-4deb-a865-5776d1e6f352",
+    "nombre":"SÁNCHEZ LTD",
+    "nit":"848.689.993-6",
+    "sector":"TURISMO",
+    "contacto":"Lorena Pinzón",
+    "correo":"andres70@quintero-parra.com",
+    "telefono":"+57 376-799-3593",
+    "activa":false
+  },
+  {
+    "id":"a4f9e89e-60b9-4ec3-b2e9-20d5eabf76fd",
+    "nombre":"  Ortiz-Galindo  ",
+    "nit":"039.464.083-0",
+    "sector":"TURISMO",
+    "contacto":"Delia Lorena Medina Osorio",
+    "correo":"arenasesperanzaballesteros.com",
+    "telefono":"+57 390-793-8841",
+    "activa":false
+  },
+  {
+    "id":"b825d935-5dd6-4166-9082-ccb9399aabc3",
+    "nombre":"Velandia Group",
+    "nit":"8528306153",
+    "sector":"TURISMO",
+    "contacto":null,
+    "correo":"javier62@ramirez-perez.com",
+    "telefono":"344 881 1210",
+    "activa":true
+  },
+  {
+    "id":"b4ef576a-daec-4c3d-bafc-dc26d81f8bf7",
+    "nombre":"MARTÍNEZ LLC",
+    "nit":"230.817.214-3",
+    "sector":"COMERCIO",
+    "contacto":"Hernán Fernando García Angulo",
+    "correo":"gloria38@bonilla-vallejo.org",
+    "telefono":"3112252883",
+    "activa":false
+  },
+  {
+    "id":"64f86315-9075-4fad-8ec0-e78719f684ae",
+    "nombre":"Arroyo-Uribe",
+    "nit":"505.661.863-2",
+    "sector":"CONSTRUCCION",
+    "contacto":null,
+    "correo":"hernansaavedravelasquez-cruz.com",
+    "telefono":"353 007 3095",
+    "activa":true
+  },
+  {
+    "id":"acc7f47d-eaa1-4e06-a7c6-f0b338ae8198",
+    "nombre":"Ojeda LLC",
+    "nit":"560.571.219-8",
+    "sector":" manufactura ",
+    "contacto":"Elizabeth Leidy Cortés",
+    "correo":"paola05@alvarez.com",
+    "telefono":"301 042 4624",
+    "activa":true
+  },
+  {
+    "id":"cbf9bd33-4dc6-4ac8-86fd-26d811d84ca0",
+    "nombre":"Gaitán-Bejarano",
+    "nit":"851.744.600-4",
+    "sector":"Educacion",
+    "contacto":"Juan Luis Hernández",
+    "correo":"moralesdiana@solano-ruiz.com",
+    "telefono":"329 391 3044",
+    "activa":false
+  },
+  {
+    "id":"2352f36c-4146-4884-b079-62c606240a4f",
+    "nombre":"Tovar, Barreto and García",
+    "nit":"898.484.160-4",
+    "sector":" salud ",
+    "contacto":"Luis Quintero Mena",
+    "correo":"patricianunez@rodriguez.com",
+    "telefono":"+57 368-142-9831",
+    "activa":true
+  },
+  {
+    "id":"6f826829-ccce-4ac4-999f-4c5b236ed3f4",
+    "nombre":"  Pérez-Bernal  ",
+    "nit":"9107322836",
+    "sector":" manufactura ",
+    "contacto":"Flor Pulido",
+    "correo":"jacquelinemoreno@rojas-soto.com",
+    "telefono":"+57 384-526-9694",
+    "activa":true
+  },
+  {
+    "id":"3d491fbb-5df9-440f-a399-01fa7cd1ca7f",
+    "nombre":"Vargas-Zuluaga",
+    "nit":"1649701693",
+    "sector":" educacion ",
+    "contacto":"Edgar Escobar",
+    "correo":"paradatatiana@gomez.com",
+    "telefono":"+57 362-341-9031",
+    "activa":false
+  },
+  {
+    "id":"69e822df-ac81-49ab-a2b5-af9dd4cdd7c2",
+    "nombre":"Rodríguez, González and Rojas",
+    "nit":"221.556.684-7",
+    "sector":"Educacion",
+    "contacto":"Yolima Patricia Giraldo Díaz",
+    "correo":"jannethnunez@martinez-rodriguez.info",
+    "telefono":"+57 320-078-4361",
+    "activa":false
+  },
+  {
+    "id":"6f0900f8-89f4-4f78-8d6e-edb92e378b39",
+    "nombre":"Hernández-Castro",
+    "nit":"607.819.754-3",
+    "sector":"FINANZAS",
+    "contacto":"Alberto León Villa Corredor",
+    "correo":"cecilia37@rodriguez.info",
+    "telefono":"3638821458",
+    "activa":true
+  },
+  {
+    "id":"ef168bcd-95d9-4ac3-96f1-1127082cd056",
+    "nombre":"BARRIOS-ORTIZ",
+    "nit":"846.019.134-4",
+    "sector":" turismo ",
+    "contacto":"Lizeth Nelly Cortés Ávila",
+    "correo":"antoniorendon@sanchez.com",
+    "telefono":"386 950 7321",
+    "activa":false
+  },
+  {
+    "id":"58574f9d-de11-453d-9e70-9c5d662257a1",
+    "nombre":"Suárez, Cabrera and Vargas",
+    "nit":"493.699.951-6",
+    "sector":" finanzas ",
+    "contacto":"John Giovanny Valencia Andrade",
+    "correo":"jhoana38@rincon-osorio.net",
+    "telefono":"3011923603",
+    "activa":true
+  },
+  {
+    "id":"72db6715-69b6-417e-b492-6a0b06744055",
+    "nombre":"PEÑA-ORJUELA",
+    "nit":"118.723.335-1",
+    "sector":"Construccion",
+    "contacto":"Carmen Prada",
+    "correo":"rgonzalez@fernandez.com",
+    "telefono":"339 114 9830",
+    "activa":true
+  },
+  {
+    "id":"2d3cbc14-2010-466e-966f-681a2ab8a9e7",
+    "nombre":"Barrios-Ríos",
+    "nit":"0736511893",
+    "sector":" agroindustria ",
+    "contacto":"José Benavides",
+    "correo":"alfonso82@daza.org",
+    "telefono":"304 322 3023",
+    "activa":true
+  },
+  {
+    "id":"8d334fc1-775d-44b5-ab06-e8eade41c492",
+    "nombre":"  Ramírez LLC  ",
+    "nit":"707.392.013-5",
+    "sector":" construccion ",
+    "contacto":"Gerardo Mejía",
+    "correo":"palaciocecilia@rodriguez-rivera.net",
+    "telefono":"3261123126",
+    "activa":false
+  },
+  {
+    "id":"d36079a3-972e-4ea4-ad56-f13eaee40310",
+    "nombre":"Mejía Ltd",
+    "nit":"248.889.957-2",
+    "sector":" educacion ",
+    "contacto":"Virginia Fernanda León Rosero",
+    "correo":"valentina93@vera.com",
+    "telefono":"3687191203",
+    "activa":true
+  },
+  {
+    "id":"39e7cc10-0c43-4130-b3c8-44fa8faacc3e",
+    "nombre":"Bermúdez, Quiroga and González",
+    "nit":"769.208.283-2",
+    "sector":"COMERCIO",
+    "contacto":"Valeria Johana Calderón Loaiza",
+    "correo":"andresgarcia@montoya.com",
+    "telefono":"320 673 2318",
+    "activa":false
+  },
+  {
+    "id":"7657ccf5-2ff5-4f89-88b0-381d40cc8a00",
+    "nombre":"  Pineda Inc  ",
+    "nit":"6815724500",
+    "sector":" turismo ",
+    "contacto":"Sara Guevara",
+    "correo":"alvaradodaniel@ruiz.org",
+    "telefono":"+57 311-371-7850",
+    "activa":true
+  },
+  {
+    "id":"0f58db44-78ce-4553-bb9b-5b944d3b17e4",
+    "nombre":"Zambrano, Calderón and Pinzón",
+    "nit":"1271130724",
+    "sector":"COMERCIO",
+    "contacto":"Karen Escobar Acosta",
+    "correo":"xguzman@sanchez.net",
+    "telefono":"+57 390-567-0867",
+    "activa":true
+  },
+  {
+    "id":"1384a70c-0741-4d18-88f2-ad8e60a278da",
+    "nombre":"Gómez Inc",
+    "nit":"0436551584",
+    "sector":" construccion ",
+    "contacto":"Alejandra Londoño Moreno",
+    "correo":"orlandomolina@arias-martinez.com",
+    "telefono":"329 608 0706",
+    "activa":true
+  },
+  {
+    "id":"17533871-4f72-4f82-9d65-94dfaef15dbc",
+    "nombre":"Moreno PLC",
+    "nit":"987.950.982-2",
+    "sector":"LOGISTICA",
+    "contacto":"María Yenny Chaparro",
+    "correo":"hmunoznaranjo.com",
+    "telefono":"344 287 7383",
+    "activa":false
+  },
+  {
+    "id":"0059c8e4-cfa2-4826-9180-c5813746edd0",
+    "nombre":"Pinzón-Díaz",
+    "nit":"1643212694",
+    "sector":"Agroindustria",
+    "contacto":"Beatriz Franco Soto",
+    "correo":"julia20@cuellar.com",
+    "telefono":"3586314417",
+    "activa":false
+  },
+  {
+    "id":"ab2a2251-55c3-4fb5-9761-6c79e5eb85d4",
+    "nombre":"Pinto LLC",
+    "nit":"625.540.263-5",
+    "sector":" finanzas ",
+    "contacto":"Ángel Juan Ramírez",
+    "correo":"camachoheidy@pena-castro.com",
+    "telefono":"3898803153",
+    "activa":false
+  },
+  {
+    "id":"ed7ecc20-6dcf-482f-ae68-571172142657",
+    "nombre":"Benavides, Delgado and Serrano",
+    "nit":"452.790.504-0",
+    "sector":" finanzas ",
+    "contacto":"David Alarcón",
+    "correo":"dannybravo@salcedo.org",
+    "telefono":"+57 351-632-1119",
+    "activa":false
+  },
+  {
+    "id":"435025b9-e402-44b6-8037-0fd509ad34d0",
+    "nombre":"  Silva-Camargo  ",
+    "nit":"180.933.913-7",
+    "sector":"Construccion",
+    "contacto":null,
+    "correo":"uordonez@arteaga.net",
+    "telefono":"+57 375-617-8688",
+    "activa":true
+  },
+  {
+    "id":"5fd91c73-f238-4e59-80a4-0c862c8073af",
+    "nombre":"  Rodríguez and Sons  ",
+    "nit":"300.915.618-2",
+    "sector":"SALUD",
+    "contacto":"Paola Rivera",
+    "correo":"fhenao@padilla-bravo.org",
+    "telefono":"3160936595",
+    "activa":true
+  },
+  {
+    "id":"787a8e22-3147-4a19-88aa-fd9a4f040207",
+    "nombre":"RIVAS INC",
+    "nit":"491.189.418-4",
+    "sector":"Logistica",
+    "contacto":"Martha Mónica Herrera Rodríguez",
+    "correo":"alfonsoparra@aguilar.com",
+    "telefono":"+57 399-821-3745",
+    "activa":false
+  },
+  {
+    "id":"7eef9322-c3a4-4317-81e0-b31f9c11e408",
+    "nombre":"Guerrero-López",
+    "nit":"042.886.050-5",
+    "sector":"TECNOLOGIA",
+    "contacto":"Esther Elena Mejía Mercado",
+    "correo":"delgadodiana@hernandez.com",
+    "telefono":"+57 330-835-6691",
+    "activa":false
+  },
+  {
+    "id":"1af43ebd-2409-4ee5-9242-77c6b8fd8aac",
+    "nombre":"  Giraldo Ltd  ",
+    "nit":"715.312.345-5",
+    "sector":"Logistica",
+    "contacto":"Maribel Palacios",
+    "correo":"shirleygonzalez@sanabria.com",
+    "telefono":"3938440134",
+    "activa":false
+  },
+  {
+    "id":"dfc004b7-b723-431e-b4bb-32f16d56a6c2",
+    "nombre":"Rodríguez, Silva and Cardona",
+    "nit":"3543788260",
+    "sector":" educacion ",
+    "contacto":"Martha Liliana Vanegas Martínez",
+    "correo":"yesenia09@palacios.org",
+    "telefono":"+57 314-492-0749",
+    "activa":false
+  },
+  {
+    "id":"c02c401f-4fe1-416e-b67f-239fab7d713f",
+    "nombre":"Castillo PLC",
+    "nit":"9969964899",
+    "sector":"TURISMO",
+    "contacto":"Luis Cristian Sánchez Páez",
+    "correo":"khenao@sanchez.com",
+    "telefono":"3408499323",
+    "activa":false
+  },
+  {
+    "id":"11876931-aa16-47c1-854f-9f232752e439",
+    "nombre":"Díaz and Sons",
+    "nit":"426.698.069-0",
+    "sector":" agroindustria ",
+    "contacto":"Carlos Leonardo Cruz Guerrero",
+    "correo":"bedoyacarolina@alvarez.com",
+    "telefono":"389 359 5382",
+    "activa":true
+  },
+  {
+    "id":"f8f535c5-4fd5-45e1-b7cf-b52e4af81d6e",
+    "nombre":"TRIANA, URIBE AND PEREA",
+    "nit":"405.612.996-5",
+    "sector":" turismo ",
+    "contacto":"Esperanza Miranda",
+    "correo":"marianacastellanos@buitrago.net",
+    "telefono":"+57 369-656-1308",
+    "activa":true
+  },
+  {
+    "id":"7737d9d9-cb16-4a1a-bc4d-c3418dc40e83",
+    "nombre":"Montes-López",
+    "nit":"2385951434",
+    "sector":"Manufactura",
+    "contacto":"Ángel Moreno Rosero",
+    "correo":"gustavo40@roa.info",
+    "telefono":"3300869661",
+    "activa":false
+  },
+  {
+    "id":"1b986632-bdaf-46b5-a252-b3bc53da0e3d",
+    "nombre":"González Group",
+    "nit":"8311395001",
+    "sector":" agroindustria ",
+    "contacto":"Cristian Ávila Castro",
+    "correo":"fernando15@cardenas.net",
+    "telefono":"+57 339-762-0534",
+    "activa":true
+  },
+  {
+    "id":"1c9889dd-570e-412e-99e2-9281e831f96f",
+    "nombre":"Rodríguez-Zapata",
+    "nit":"7946207266",
+    "sector":"CONSTRUCCION",
+    "contacto":"Stella Herrera Cortés",
+    "correo":"canoamelia@luna.com",
+    "telefono":"399 140 6884",
+    "activa":true
+  },
+  {
+    "id":"c68b50c9-8b0b-43de-af2e-577cce6bf803",
+    "nombre":"Manrique and Sons",
+    "nit":"3731255235",
+    "sector":" finanzas ",
+    "contacto":"Luis Vásquez García",
+    "correo":"ramirezalbert@buitrago.org",
+    "telefono":"320 613 6385",
+    "activa":true
+  },
+  {
+    "id":"ae80ac03-d568-4100-92fd-cce490cba095",
+    "nombre":"Correa PLC",
+    "nit":"9561337184",
+    "sector":"Logistica",
+    "contacto":"Fernando Martínez",
+    "correo":"wilsonruiz@alvarado.net",
+    "telefono":"301 644 0373",
+    "activa":false
+  },
+  {
+    "id":"90a77544-d788-4c4f-9e22-bf6b7d91b678",
+    "nombre":"Vargas, López and Correa",
+    "nit":"1277822102",
+    "sector":"Tecnologia",
+    "contacto":"Melissa Wendy Fernández",
+    "correo":"sandraramirez@granados.com",
+    "telefono":"3797363831",
+    "activa":false
+  },
+  {
+    "id":"4b7e70f5-5013-4863-9c84-eadbcf4b0290",
+    "nombre":"Díaz, Carrillo and Ruiz",
+    "nit":"053.970.798-6",
+    "sector":"MANUFACTURA",
+    "contacto":"Héctor Portilla Cárdenas",
+    "correo":"castilloduvan@galeano.com",
+    "telefono":"3050682122",
+    "activa":false
+  },
+  {
+    "id":"2b67eece-db8c-40e2-99cd-c3933c5013ed",
+    "nombre":"  Méndez LLC  ",
+    "nit":"2165058714",
+    "sector":"Salud",
+    "contacto":"Julián Ardila Guzmán",
+    "correo":"patriciajaramillo@jaramillo-tamayo.org",
+    "telefono":"308 984 3699",
+    "activa":false
+  },
+  {
+    "id":"7ef15886-bdbd-4005-a28e-ac1b4842df34",
+    "nombre":"GUTIÉRREZ, VÁSQUEZ AND RODRÍGUEZ",
+    "nit":"2205093869",
+    "sector":" salud ",
+    "contacto":"Alfonso Jiménez",
+    "correo":"stellacalderon@leon.com",
+    "telefono":"+57 345-788-7071",
+    "activa":true
+  },
+  {
+    "id":"d1de4bd3-0fb1-4ee1-b4cc-6c940c4986a7",
+    "nombre":"Salgado-Moreno",
+    "nit":"867.673.820-9",
+    "sector":"LOGISTICA",
+    "contacto":"Fernando Adolfo Corredor Martínez",
+    "correo":"izapata@florez-sanchez.org",
+    "telefono":"+57 396-872-2589",
+    "activa":false
+  },
+  {
+    "id":"da15475c-d31f-43db-8c18-ece783c5ac7f",
+    "nombre":"Zapata Ltd",
+    "nit":"0858062350",
+    "sector":"TURISMO",
+    "contacto":"Alex Vergara",
+    "correo":"alfonso66@beltran.com",
+    "telefono":"312 482 5544",
+    "activa":false
+  },
+  {
+    "id":"8869c8a6-2c37-49e5-8de9-edc60db6caa4",
+    "nombre":"BETANCUR GROUP",
+    "nit":"796.325.942-3",
+    "sector":"EDUCACION",
+    "contacto":"Flor Mena Sanabria",
+    "correo":"oserrano@vasquez.com",
+    "telefono":"356 241 5285",
+    "activa":true
+  },
+  {
+    "id":"ba592d05-fe51-4de2-8b98-b83d9cec7bdf",
+    "nombre":"VILLAMIL, RAMOS AND CARO",
+    "nit":"562.926.933-5",
+    "sector":"LOGISTICA",
+    "contacto":null,
+    "correo":"velasquezsocorro@rodriguez-jaimes.net",
+    "telefono":"+57 346-850-9574",
+    "activa":true
+  },
+  {
+    "id":"ba11fb6b-3833-4a02-8cff-3855e3bbb318",
+    "nombre":"Torres-Ramírez",
+    "nit":"9189117972",
+    "sector":"TECNOLOGIA",
+    "contacto":"Diana Roa",
+    "correo":"carlos40@velasco.biz",
+    "telefono":"341 547 1553",
+    "activa":false
+  },
+  {
+    "id":"3e81eb67-c7e1-424c-a552-5d04d1439f07",
+    "nombre":"Rojas and Sons",
+    "nit":"5936781367",
+    "sector":" agroindustria ",
+    "contacto":"José Edilson Ortiz",
+    "correo":"jhonfranco@gutierrez.com",
+    "telefono":"+57 352-769-8198",
+    "activa":false
+  },
+  {
+    "id":"9e721893-2e2f-4682-b733-34177f9f2f53",
+    "nombre":"Londoño-Calderón",
+    "nit":"2704523888",
+    "sector":"TURISMO",
+    "contacto":"Diego Giovanny Betancur",
+    "correo":"uguerrero@mora.info",
+    "telefono":"344 227 5854",
+    "activa":true
+  },
+  {
+    "id":"6834f8b4-3168-498d-8838-e2c1ca46dd16",
+    "nombre":"Barrera, Ardila and Salazar",
+    "nit":"5594282491",
+    "sector":"COMERCIO",
+    "contacto":"Mariana Fernanda Quintero",
+    "correo":"leonrodriguez@gomez.com",
+    "telefono":"+57 339-313-2155",
+    "activa":false
+  },
+  {
+    "id":"9cab2f1d-6acc-4187-b87e-31845db0fc21",
+    "nombre":"ROJAS LLC",
+    "nit":"5708368214",
+    "sector":"Manufactura",
+    "contacto":"Jorge Guzmán",
+    "correo":"nflorez@rincon.com",
+    "telefono":"367 746 2025",
+    "activa":false
+  },
+  {
+    "id":"ac45c2c1-a529-4844-87ca-0c82c2683b83",
+    "nombre":"Bustamante, Rueda and Villegas",
+    "nit":"4318328123",
+    "sector":"AGROINDUSTRIA",
+    "contacto":"Patricia Angie Cuéllar",
+    "correo":"pinedaantonio@rivera.com",
+    "telefono":"+57 383-647-2387",
+    "activa":true
+  },
+  {
+    "id":"9d1b9838-5e5e-40bf-bd01-1fb9ebb36f66",
+    "nombre":"Rodríguez-Pérez",
+    "nit":"7681722577",
+    "sector":"Educacion",
+    "contacto":"Fernando Geovanny Londoño",
+    "correo":"michel62@valderrama.net",
+    "telefono":"376 831 6082",
+    "activa":false
+  },
+  {
+    "id":"bc532a31-2a23-473f-b273-8c3aa7264ef4",
+    "nombre":"MENDOZA, GONZÁLEZ AND CORREA",
+    "nit":"173.373.992-0",
+    "sector":" tecnologia ",
+    "contacto":"Juan Carlos Pedraza",
+    "correo":"jairorangel@ardila.org",
+    "telefono":"3143882325",
+    "activa":false
+  },
+  {
+    "id":"fe812770-738f-4df5-ba41-2c7fff573165",
+    "nombre":"MORALES, ALFONSO AND ANGULO",
+    "nit":"8358446177",
+    "sector":" educacion ",
+    "contacto":null,
+    "correo":"beatriz49@leon-vanegas.com",
+    "telefono":"379 970 2927",
+    "activa":true
+  },
+  {
+    "id":"1181ff96-2da7-4326-a585-71a0fd05131b",
+    "nombre":"Pérez LLC",
+    "nit":"397.871.375-2",
+    "sector":" logistica ",
+    "contacto":"Patricia María Gil Cardozo",
+    "correo":"williammedina@alvarado.com",
+    "telefono":"+57 348-797-8889",
+    "activa":true
+  },
+  {
+    "id":"677505be-a067-49b7-a85b-025321e58055",
+    "nombre":"Romero-Rojas",
+    "nit":"5852386003",
+    "sector":" comercio ",
+    "contacto":"Isabel Suárez",
+    "correo":"kfranco@ruiz.com",
+    "telefono":"+57 339-102-9295",
+    "activa":true
+  },
+  {
+    "id":"c9c69736-0039-4bb9-baa8-ea333b6bede9",
+    "nombre":"Rodríguez, Suárez and Acosta",
+    "nit":"8309309671",
+    "sector":"Finanzas",
+    "contacto":"Nubia Tatiana León González",
+    "correo":"jmartinez@sanchez.info",
+    "telefono":"367 201 9111",
+    "activa":false
+  },
+  {
+    "id":"934f946d-f988-40c1-ac1e-7a51c407d6e8",
+    "nombre":"  Castillo-Hernández  ",
+    "nit":"2019072587",
+    "sector":"EDUCACION",
+    "contacto":"Diana Mercedes Padilla Gómez",
+    "correo":"libiaquintero@rodriguez.com",
+    "telefono":"3812421140",
+    "activa":false
+  },
+  {
+    "id":"407d5b63-bad2-45be-b2c7-f08ac57b8712",
+    "nombre":"Carrillo, Pineda and Hernández",
+    "nit":"509.522.946-2",
+    "sector":"Finanzas",
+    "contacto":"Mireya Vega",
+    "correo":"johnny56@arrieta.com",
+    "telefono":"339 952 9701",
+    "activa":false
+  },
+  {
+    "id":"76f115ec-d48c-43a3-978a-8d8fe500eedf",
+    "nombre":"Tamayo Inc",
+    "nit":"243.658.585-6",
+    "sector":" construccion ",
+    "contacto":"Alonso Hernández",
+    "correo":"munozana@patino.com",
+    "telefono":"+57 361-592-7387",
+    "activa":true
+  },
+  {
+    "id":"0f189dc4-5c5a-4981-8d1d-627ba45fbb16",
+    "nombre":"  Martínez-Carvajal  ",
+    "nit":"0716690632",
+    "sector":"Salud",
+    "contacto":"Ruby Contreras Garcés",
+    "correo":"herrerabeatriz@nino.com",
+    "telefono":"+57 334-030-1095",
+    "activa":false
+  },
+  {
+    "id":"09edb3fe-e772-46bf-9af3-96d8a0c72aba",
+    "nombre":"ARTEAGA-OSPINA",
+    "nit":"756.491.579-5",
+    "sector":" agroindustria ",
+    "contacto":"Jorge Elkin Monroy",
+    "correo":"carol12@restrepo-rodriguez.com",
+    "telefono":"380 181 0306",
+    "activa":false
+  },
+  {
+    "id":"3b25e76c-b3ec-4682-bd76-cb1efbc6632a",
+    "nombre":"Torres, Cardona and Castro",
+    "nit":"1726808081",
+    "sector":"COMERCIO",
+    "contacto":"Daniel Carlos Gómez",
+    "correo":"quirozdiego@garcia-palacios.biz",
+    "telefono":"371 307 3510",
+    "activa":false
+  },
+  {
+    "id":"4693f7b5-169e-4999-98d2-14c205563750",
+    "nombre":"Morales-Contreras",
+    "nit":"4743621300",
+    "sector":" construccion ",
+    "contacto":"Juan Contreras Contreras",
+    "correo":"wendy69@zapata-ramirez.net",
+    "telefono":"305 339 6274",
+    "activa":false
+  },
+  {
+    "id":"59bc3bde-ef87-4b98-8f4b-95c1f5331adc",
+    "nombre":"Naranjo-Mendoza",
+    "nit":"2159183270",
+    "sector":"TURISMO",
+    "contacto":"María Ortiz",
+    "correo":"tsalazar@pineda-rodriguez.com",
+    "telefono":"+57 310-797-7140",
+    "activa":true
+  },
+  {
+    "id":"f6ea050c-8cbb-47e9-8f1e-68353e6a8e1d",
+    "nombre":"Zambrano LLC",
+    "nit":"938.819.490-5",
+    "sector":"SALUD",
+    "contacto":"Nelly Sonia Ruiz Pérez",
+    "correo":"david80@jimenez.biz",
+    "telefono":"398 731 3797",
+    "activa":false
+  },
+  {
+    "id":"06967786-3fc6-4e6a-a214-f3e09a5e1e91",
+    "nombre":"González, Peña and Agudelo",
+    "nit":"4166123740",
+    "sector":"Comercio",
+    "contacto":"Jairo Fernando Moreno Pérez",
+    "correo":"xiomara38@vega.com",
+    "telefono":"+57 397-014-2620",
+    "activa":true
+  },
+  {
+    "id":"fd15ac71-6c5b-4b01-9f37-bbe9b89f91ce",
+    "nombre":"  Correa PLC  ",
+    "nit":"7821160204",
+    "sector":"Agroindustria",
+    "contacto":"Miriam Susana Vásquez",
+    "correo":"morenomanuel@cordoba.org",
+    "telefono":"372 117 0889",
+    "activa":false
+  },
+  {
+    "id":"5a756924-fd5e-48d2-b9b0-24634358a603",
+    "nombre":"Chaparro-Palacios",
+    "nit":"186.448.221-7",
+    "sector":"Logistica",
+    "contacto":"Cristian Gabriel Moreno",
+    "correo":"xcardozo@montenegro-montoya.com",
+    "telefono":"+57 304-806-7571",
+    "activa":false
+  },
+  {
+    "id":"7666c6a1-a8ea-4799-894f-3ef8ddd92043",
+    "nombre":"Sepúlveda Group",
+    "nit":"914.961.128-7",
+    "sector":"Logistica",
+    "contacto":"Johan Carvajal",
+    "correo":"gvelasquez@restrepo.org",
+    "telefono":"3704095314",
+    "activa":false
+  },
+  {
+    "id":"fa5de627-6ec2-4d15-a7ef-2fcefbb73830",
+    "nombre":"Angulo Group",
+    "nit":"156.078.327-4",
+    "sector":"MANUFACTURA",
+    "contacto":"Claudia Liliana González Granados",
+    "correo":"odiaz@loaiza.com",
+    "telefono":"+57 396-683-4960",
+    "activa":false
+  },
+  {
+    "id":"a41e1ce5-8d18-4d12-98be-451dc35b0963",
+    "nombre":"CÁRDENAS-ÁLVAREZ",
+    "nit":"170.285.162-2",
+    "sector":"MANUFACTURA",
+    "contacto":"Dario Antonio Méndez",
+    "correo":"andres20@bolanos.com",
+    "telefono":"3868839062",
+    "activa":false
+  },
+  {
+    "id":"444c2f97-a8cf-4772-9254-6e5880bc75d0",
+    "nombre":"Medina-Sánchez",
+    "nit":"879.916.091-1",
+    "sector":" agroindustria ",
+    "contacto":"Andrés Molano",
+    "correo":"orozcorafael@vargas.com",
+    "telefono":"+57 336-133-7605",
+    "activa":true
+  },
+  {
+    "id":"cec2a871-af46-453c-b533-a33c1a87169b",
+    "nombre":"Bejarano Inc",
+    "nit":"458.816.502-5",
+    "sector":"TURISMO",
+    "contacto":"Germán Zapata",
+    "correo":"carmen16@bernal-arboleda.com",
+    "telefono":"3409661771",
+    "activa":false
+  },
+  {
+    "id":"f933b696-ee46-4691-98d0-6b1d78551013",
+    "nombre":"HERNÁNDEZ, MUÑOZ AND MONTOYA",
+    "nit":"8088067821",
+    "sector":"Comercio",
+    "contacto":"Andrés Ortiz",
+    "correo":"mesapedrodiaz.com",
+    "telefono":"386 989 3969",
+    "activa":true
+  },
+  {
+    "id":"3d2f7993-fe5a-45e4-b7b7-4c20b2d67c51",
+    "nombre":"  Mendoza, Granados and Flórez  ",
+    "nit":"4155945011",
+    "sector":"TECNOLOGIA",
+    "contacto":"Consuelo Duarte Martínez",
+    "correo":"pportilla@oviedo.com",
+    "telefono":"+57 317-160-3988",
+    "activa":true
+  },
+  {
+    "id":"11949880-21f5-4204-ba63-42f8aa388e05",
+    "nombre":"Rojas-Álvarez",
+    "nit":"3322889857",
+    "sector":" construccion ",
+    "contacto":"Mauricio Martínez Hurtado",
+    "correo":"mario48@vargas.biz",
+    "telefono":"3489667605",
+    "activa":true
+  },
+  {
+    "id":"6b8c309f-f38c-4ac4-8f55-2d5a350e4c5a",
+    "nombre":"Muñoz-Rodríguez",
+    "nit":"4565775809",
+    "sector":"Salud",
+    "contacto":"Adolfo Jesús Ruiz Torres",
+    "correo":"salazarolga@munoz-parra.biz",
+    "telefono":"3226540165",
+    "activa":true
+  },
+  {
+    "id":"a0156de2-8e04-4f6d-a6e7-1e9caa52bbd7",
+    "nombre":"LEÓN, TORRES AND MARTÍNEZ",
+    "nit":"622.122.427-6",
+    "sector":"Construccion",
+    "contacto":"Edgar Felipe Castillo Cabrera",
+    "correo":"giraldosandra@castro.com",
+    "telefono":"3584886008",
+    "activa":false
+  },
+  {
+    "id":"7fc992dd-3fb2-4e23-a4c5-0319498a5d51",
+    "nombre":"González PLC",
+    "nit":"867.782.312-9",
+    "sector":"TECNOLOGIA",
+    "contacto":"Daniel Stiven Rodríguez",
+    "correo":"cindy64@henao.com",
+    "telefono":"+57 321-203-8437",
+    "activa":false
+  },
+  {
+    "id":"f2bcd7fd-81e4-4819-9506-8b057afa01f5",
+    "nombre":"Loaiza-Blanco",
+    "nit":"134.026.650-2",
+    "sector":" construccion ",
+    "contacto":"Emilia Geraldine Riascos González",
+    "correo":"zcaicedo@forero.biz",
+    "telefono":"3862110225",
+    "activa":true
+  },
+  {
+    "id":"ba592d05-fe51-4de2-8b98-b83d9cec7bdf",
+    "nombre":"VILLAMIL, RAMOS AND CARO",
+    "nit":"562.926.933-5",
+    "sector":"LOGISTICA",
+    "contacto":null,
+    "correo":"velasquezsocorro@rodriguez-jaimes.net",
+    "telefono":"+57 346-850-9574",
+    "activa":true
+  },
+  {
+    "id":"f4202331-5fbb-407a-8be2-42fe2dd65dba",
+    "nombre":"García-Cabrera",
+    "nit":"701.595.919-4",
+    "sector":" comercio ",
+    "contacto":"Daniel Alfredo Ramos",
+    "correo":"fsuarez@vasquez-sarmiento.com",
+    "telefono":"392 056 7756",
+    "activa":true
+  },
+  {
+    "id":"2352f36c-4146-4884-b079-62c606240a4f",
+    "nombre":"Tovar, Barreto and García",
+    "nit":"898.484.160-4",
+    "sector":" salud ",
+    "contacto":"Luis Quintero Mena",
+    "correo":"patricianunez@rodriguez.com",
+    "telefono":"+57 368-142-9831",
+    "activa":true
+  },
+  {
+    "id":"e685e3ac-ecca-4a17-87bb-39479d1030be",
+    "nombre":"Rincón-García",
+    "nit":"2415131528",
+    "sector":"TURISMO",
+    "contacto":"Fernando Víctor Molina",
+    "correo":"toroeugenia@mejia.net",
+    "telefono":"353 800 3296",
+    "activa":true
+  },
+  {
+    "id":"1af43ebd-2409-4ee5-9242-77c6b8fd8aac",
+    "nombre":"  Giraldo Ltd  ",
+    "nit":"715.312.345-5",
+    "sector":"Logistica",
+    "contacto":"Maribel Palacios",
+    "correo":"shirleygonzalez@sanabria.com",
+    "telefono":"3938440134",
+    "activa":false
+  },
+  {
+    "id":"76f115ec-d48c-43a3-978a-8d8fe500eedf",
+    "nombre":"Tamayo Inc",
+    "nit":"243.658.585-6",
+    "sector":" construccion ",
+    "contacto":"Alonso Hernández",
+    "correo":"munozana@patino.com",
+    "telefono":"+57 361-592-7387",
+    "activa":true
+  },
+  {
+    "id":"fbff0518-1223-493d-b97e-d5f41df47a8b",
+    "nombre":"Hoyos LLC",
+    "nit":"4734043370",
+    "sector":" construccion ",
+    "contacto":"Xiomara Perea",
+    "correo":"svelasquez@mercado-forero.com",
+    "telefono":"3451957782",
+    "activa":true
+  },
+  {
+    "id":"1db169f6-6a50-4505-beeb-cf21eb026472",
+    "nombre":"  Medina Ltd  ",
+    "nit":"7715910300",
+    "sector":"COMERCIO",
+    "contacto":"Luz Ruiz Pacheco",
+    "correo":"ftorres@vanegas.net",
+    "telefono":"3004010414",
+    "activa":true
+  },
+  {
+    "id":"0059c8e4-cfa2-4826-9180-c5813746edd0",
+    "nombre":"Pinzón-Díaz",
+    "nit":"1643212694",
+    "sector":"Agroindustria",
+    "contacto":"Beatriz Franco Soto",
+    "correo":"julia20@cuellar.com",
+    "telefono":"3586314417",
+    "activa":false
+  },
+  {
+    "id":"af57eb10-6a53-4773-99a4-8025dd4cde15",
+    "nombre":"Flórez, Chaparro and Ramírez",
+    "nit":"362.948.978-6",
+    "sector":" tecnologia ",
+    "contacto":"Flor Paula Bustos",
+    "correo":"marthalara@ortiz.com",
+    "telefono":"396 661 3473",
+    "activa":true
+  },
+  {
+    "id":"3b25e76c-b3ec-4682-bd76-cb1efbc6632a",
+    "nombre":"Torres, Cardona and Castro",
+    "nit":"1726808081",
+    "sector":"COMERCIO",
+    "contacto":"Daniel Carlos Gómez",
+    "correo":"quirozdiego@garcia-palacios.biz",
+    "telefono":"371 307 3510",
+    "activa":false
+  },
+  {
+    "id":"2d185579-cea3-4161-bec8-310a853d391a",
+    "nombre":"Aguilar, Serrano and Bustamante",
+    "nit":"6356022939",
+    "sector":" turismo ",
+    "contacto":"Alex Salazar",
+    "correo":"adriana46@rodriguez.com",
+    "telefono":"374 906 0723",
+    "activa":true
+  },
+  {
+    "id":"f5eb7349-b48f-496b-a4bb-3fa911ddd0b6",
+    "nombre":"Londoño-Gutiérrez",
+    "nit":"319.100.900-4",
+    "sector":" turismo ",
+    "contacto":"Lucía Flórez",
+    "correo":"dianamorales@ramirez.com",
+    "telefono":"346 040 1424",
+    "activa":true
+  },
+  {
+    "id":"68ed2386-7d83-4241-bbae-b057dd2973df",
+    "nombre":"Acosta-Hernández",
+    "nit":"0822269405",
+    "sector":"Construccion",
+    "contacto":"Ruth Laura Cruz Mendoza",
+    "correo":"orlando84@cantillo-guzman.com",
+    "telefono":"3414651113",
+    "activa":true
+  }
+]
