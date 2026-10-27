@@ -1,94 +1,101 @@
-import random 
+import random
 import uuid
-import pandas as pd
 from faker import Faker
 
-# 1. Sembrar semillas para los datos a simular
-random.seed(42)
+#1. configurar el faker a la region que necesito
+fake=Faker("es_CO")
+
+#2. Sembrar semillas para tener coherencia en los datos
+#simulados
 Faker.seed(42)
+random.seed(42)
 
-# 2. IdentiFicar los datos a simular con su tipo de dato
-# id (texto (UUID)), nombre, correo, contrasena_hash, rol, activo, fecha_registro
+#3. Identifico los datos que debo simular
+#id (texto (UUID))
+#nombre (texto)
+#correo (texto)
+#contrasena_hash (texto)
+#rol (texto)
+#activo (booleano),
+#fecha_registro (fecha y hora)
 
-# 3. ESTABLECER UNA CONSTANTE PARA EL NUEMRO DE SIMULACIONS
+#4. Identifico los datos o el dato que sea un selector
+ROLES=["ADMIN","EMPRESA","PARTICIPANTE"]
+
+#5. Defino mi DATASET
 FILAS=400
-ROLES=["administrador","empresario","estudiante","profesor"]
-FALSITO=Faker("es_CO")
 
-# 4. Funcion generadora
-def generar_datos(numero_filas=400):
-    usuarios=[]
-    for _ in range(numero_filas):
-        usuarios.append({
+#6. Construyo una funcion para generar los N datos pedidos (LIMPIOS)
+def generar_datos_limpios(numero_datos=FILAS):
+    filas=[]
+    for _ in range(numero_datos):
+
+        filas.append({
             "id":str(uuid.uuid4()),
-            "nombre":FALSITO.name(),
-            "correo":FALSITO.email(),
-            "contrasena_hash":FALSITO.sha256(),
-            "activo":random.choice([True,False]),
+            "nombre":fake.name(),
+            "correo":fake.email(),
+            "contrasena_hash":fake.sha256(),
             "rol":random.choice(ROLES),
-            "fecha_registro":FALSITO.date_time_between(start_date="-2y", end_date="now")
+            "activo":random.choice([True,False]),
+            "fecha_registro":fake.date_time_between(start_date="-2y", end_date="now")
+
         })
-    return usuarios
+    return filas
 
-# 5. Conviertindo los datos generados en un dataframe con PANDAS
-# (Lo dejamos como global tal como lo tenías, aunque es buena práctica instanciarlo abajo)
-tabla_ordenada_usuarios=pd.DataFrame(generar_datos())
+#Ensuciar los datos
 
-# 7.1 funcion para ensuciar una muestra de los datos
-def obtener_muestra(datos, porcentaje):
-    return datos.sample(frac=porcentaje, random_state=random.randint(0, 999)).index
+#1. Crear una funcion para definir procentajes de error
+def generar_muestra(datos,porcentaje):
+    #frac es el porcentaje de filas que se toman al azar
+    return datos.sample(frac=porcentaje, random_state=random.randint(0,999)).index
 
-# 7.2 Funcion auxiliar para cambiar valores de un texto 
-def escribir_mal(texto): 
-    variantes=[texto.lower(),texto.title(),texto.capitalize(),f" {texto} ", "Andres Florez"]
+#2. Crear una funcion para escribir mal un texto
+def escribir_mal(texto):
+    variantes=[texto.lower(),f" {texto.title()} ", texto.capitalize()]
     return random.choice(variantes)
 
-# 7.3 funcion auxiliar para cambiar los booleanos
-def convertir_booleano(valor):
+#3. Convertir boolenos en textos
+def convertir_booleano_texto(valor):
     if valor:
         return random.choice(["SI", "1"])
-    else: 
-        return random.choice(["NO", "0"])
+    return random.choice(["NO", "0"])
 
-# 7.4 Funcion principal para ensuciar los datos simulados
+#4. Funcion para ensuciar los datos
 def ensuciar(datos_df):
     datos_df=datos_df.copy()
-    
-    filas_elegidas=obtener_muestra(datos_df,0.1)
-    datos_df.loc[filas_elegidas, "nombre"] = " " +datos_df.loc[filas_elegidas, "nombre"] + " "
+    #nombre: 10% con espacios sobrantes, 8% Mayuscula
+    filas_elegidas=generar_muestra(datos_df,0.10)
+    datos_df.loc[filas_elegidas,"nombre"]=" "+datos_df.loc[filas_elegidas,"nombre"]+" "
 
-    filas_elegidas=obtener_muestra(datos_df,0.08)
-    datos_df.loc[filas_elegidas, "nombre"] = datos_df.loc[filas_elegidas, "nombre"].str.upper()
+    filas_elegidas=generar_muestra(datos_df,0.08)
+    datos_df.loc[filas_elegidas,"nombre"]=datos_df.loc[filas_elegidas,"nombre"].str.upper()
 
-    filas_elegidas=obtener_muestra(datos_df, 0.05)
-    datos_df.loc[filas_elegidas, "correo"]=datos_df.loc[filas_elegidas, "correo"].str.replace("@","")
+    #correo: 12% Mayusculas 5% sin el arroba 4% en None
+    filas_elegidas=generar_muestra(datos_df,0.12)
+    datos_df.loc[filas_elegidas,"correo"]=datos_df.loc[filas_elegidas,"correo"].str.upper()
 
-    # CORRECCIÓN 1: Se eliminó la línea "datos_df.loc[filas_elegidas, "rol"].map" incompleta.
-    filas_elegidas=obtener_muestra(datos_df,0.05)
-    datos_df.loc[filas_elegidas, "rol"]=datos_df.loc[filas_elegidas, "rol"].map(escribir_mal)
+    filas_elegidas=generar_muestra(datos_df,0.05)
+    datos_df.loc[filas_elegidas,"correo"]=datos_df.loc[filas_elegidas,"correo"].str.replace("@","", regex=False)
 
-    datos_df["activo"]=datos_df["activo"].astype(object)
-    filas_elegidas=obtener_muestra(datos_df,0.15)
-    datos_df.loc[filas_elegidas,"activo"]=datos_df.loc[filas_elegidas,"activo"].map(convertir_booleano)
+    filas_elegidas=generar_muestra(datos_df,0.04)
+    datos_df.loc[filas_elegidas,"correo"]=None
 
+    #rol variantes de escritura (admin ADMIN Admin)
+    filas_elegidas=generar_muestra(datos_df,0.07)
+    datos_df.loc[filas_elegidas,"rol"]=datos_df.loc[filas_elegidas,"rol"].map(escribir_mal)
+
+    #fecha dos formatos mezclados (2026-03-15 14:30:00 y 15/03/2026 14:30)
     iso=datos_df["fecha_registro"].dt.strftime("%Y-%m-%d %H:%M:%S")
     latino=datos_df["fecha_registro"].dt.strftime("%d/%m/%Y %H:%M")
     datos_df["fecha_registro"]=iso
-    
-    filas_elegidas=obtener_muestra(datos_df,0.25)
-    
-    # CORRECCIÓN 2: Reemplazamos la línea "datos_df" por la asignación real
-    datos_df.loc[filas_elegidas, "fecha_registro"] = latino[filas_elegidas]
-    
-    return datos_df
+    filas_elegidas=generar_muestra(datos_df,0.4)
+    datos_df.loc[filas_elegidas,"fecha_registro"]=latino.loc[filas_elegidas]
 
-if __name__ == "__main__":
-    # CORRECCIÓN 3: Convertimos la lista devuelta a DataFrame y ejecutamos la función ensuciar
-    lista_datos = generar_datos(FILAS)
-    df_limpio = pd.DataFrame(lista_datos) 
-    
-    df_sucio = ensuciar(df_limpio)
-    
-    print("Shape del DataFrame:", df_sucio.shape)
-    print("\nPrimeras filas:\n", df_sucio.head())
-    print("\nNulos por columna:\n", df_sucio.isna().sum())
+    #activo en ocaciones llega SI NO 1 o 0
+    #primero la columna pasa a tipo object para que acepte textos y booleanos
+    datos_df["activo"]=datos_df["activo"].astype(object)
+    filas_elegidas=generar_muestra(datos_df,0.3)
+    datos_df.loc[filas_elegidas,"activo"]=datos_df.loc[filas_elegidas,"activo"].map(convertir_booleano_texto)
+
+    #devuelvo la tabla ya sucia
+    return datos_df
