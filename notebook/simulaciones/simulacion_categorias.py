@@ -16,7 +16,7 @@ import pandas as pd
 CATEGORIAS = ["Logística", "Tecnología", "Finanzas", "Recursos Humanos", "Marketing", "Ventas", "Operaciones", "Atención al Cliente", "Legal", "Compras"]
 AREAS = ["desarrollo", "salud cuidado", "administracion", "gastronomia"]
 
-def _ensuciar_nombre(texto):
+def _ensuciar_categorias(texto):
     #Genera variantes de escritura para simular errores de digitación
     sin_tilde = (
         texto.replace("á", "a").replace("é", "e").replace("í", "i")
@@ -51,7 +51,7 @@ def generar_categorias(n: int = 250) -> pd.DataFrame:
     for _ in range(n_unicos):
         # Seleccionamos la categoría base y la ensuciamos
         cat_base = random.choice(CATEGORIAS)
-        nombre = _ensuciar_nombre(cat_base)
+        nombre = _ensuciar_categorias(cat_base)
         
         # Ensuciar descripción (15% en None)
         descripcion = None if random.random() < 0.15 else fake.sentence(nb_words=8)
