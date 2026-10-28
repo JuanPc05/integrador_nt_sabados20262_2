@@ -1,10 +1,16 @@
+import sys
 from pathlib import Path
-from notebook.simulaciones.simular_registros import generar_registros, FILAS
 
 # 1. rutas y nombres
 NOMBRE_ENTIDAD = "registros"
 CARPETA_PROYECTO = Path(__file__).resolve().parents[2]
 CARPETA_CRUDO = CARPETA_PROYECTO / "data" / "crudo"
+
+# Asegurar que la raíz del proyecto esté en sys.path para permitir ejecución directa
+if str(CARPETA_PROYECTO) not in sys.path:
+    sys.path.insert(0, str(CARPETA_PROYECTO))
+
+from notebook.simulaciones.simular_registros import generar_registros, FILAS
 
 # 2. una funcion por formato
 def preparar_carpeta(carpeta):
