@@ -12,10 +12,9 @@ from notebook.simulaciones.simular_prioridades import generar_prioridades
 from notebook.exportaciones.exportacion_empresas import exportar_empresas
 from notebook.exportaciones.exportar_registros import exportar_registros
 from notebook.exportaciones.exportar_categorias import exportar_categorias
-# NOTA: Los demás compañeros agregarán sus exportadores cuando suban su respectivo script:
-# from notebook.exportaciones.exportar_usuarios import exportar_usuarios
-# from notebook.exportaciones.exportar_retos import exportar_retos
-# from notebook.exportaciones.exportar_prioridades import exportar_prioridades
+from notebook.exportaciones.exportar_usuarios import exportar_usuarios
+from notebook.exportaciones.exportar_prioridades import exportar_prioridades
+
 
 
 print("***** SIMULACION *****")
@@ -67,10 +66,11 @@ print(f"Registros exportados: {len(rutas_registros)} archivos en data/crudo")
 rutas_categorias = exportar_categorias(categorias_sucias_df)
 print(f"Categorias exportadas: {len(rutas_categorias)} archivos en data/crudo")
 
-# NOTA: A medida que cada compañero termine su archivo en 'exportaciones/',
-# se conectará aquí para exportar todo desde main:
-# rutas_usuarios = exportar_usuarios(usuarios_sucios_df)
-# rutas_retos = exportar_retos(retos_sucios_df)
-# rutas_prioridades = exportar_prioridades(prioridades_sucias_df)
+rutas_usuarios = exportar_usuarios(usuarios_sucios_df)
+print(f"Usuarios exportados: {len(rutas_usuarios)} archivos en data/crudo")
+
+rutas_prioridades = exportar_prioridades(prioridades_sucias_df)
+print(f"Prioridades exportadas: {len(rutas_prioridades)} archivos en data/crudo")
+
 
 print("\nArchivos creados exitosamente.")
