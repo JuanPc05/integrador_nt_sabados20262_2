@@ -3,26 +3,37 @@ import pandas as pd
 # 1. Importar simulaciones
 from notebook.simulaciones.simular_empresa import generar_empresas
 from notebook.simulaciones.simular_registros import generar_registros
-from notebook.simulaciones.simular_usuarios import generar_datos_limpios, ensuciar
+from notebook.simulaciones.simular_usuarios import generar_usuarios
 from notebook.simulaciones.simulacion_categorias import generar_categorias
+from notebook.simulaciones.simular_retos import generar_retos
+from notebook.simulaciones.simular_prioridades import generar_prioridades
 
 # 2. Importar exportaciones creadas hasta el momento (Enfoque 1: un archivo por entidad)
 from notebook.exportaciones.exportacion_empresas import exportar_empresas
 from notebook.exportaciones.exportar_registros import exportar_registros
-# NOTA: Los demás compañeros agregarán sus exportadores cuando suban su respectivo script:
-# from notebook.exportaciones.exportar_usuarios import exportar_usuarios
-# from notebook.exportaciones.exportar_categorias import exportar_categorias
+from notebook.exportaciones.exportar_categorias import exportar_categorias
+from notebook.exportaciones.exportar_usuarios import exportar_usuarios
+from notebook.exportaciones.exportar_prioridades import exportar_prioridades
+
 
 
 print("***** SIMULACION *****")
-# Generar datos simulados
+# Generar datos simulados de tablas base
 empresas_sucias_df = generar_empresas()
-registros_sucios_df = generar_registros()
-
-usuarios_df = pd.DataFrame(generar_datos_limpios())
-usuarios_sucios_df = ensuciar(usuarios_df)
-
+usuarios_sucios_df = generar_usuarios()
 categorias_sucias_df = generar_categorias()
+prioridades_sucias_df = generar_prioridades()
+
+# Generar tablas relacionadas pasando los IDs reales para mantener integridad referencial
+retos_sucios_df = generar_retos(
+    ids_empresa=empresas_sucias_df["id"].unique(),
+    ids_categoria=categorias_sucias_df["id"].unique(),
+    ids_prioridad=prioridades_sucias_df["id"].unique(),
+)
+registros_sucios_df = generar_registros(
+    ids_usuario=usuarios_sucios_df["id"].unique(),
+    ids_reto=retos_sucios_df["id"].unique(),
+)
 
 # Mostrar muestra de datos (primeras 5 filas)
 print("\n--- EMPRESAS (Muestra) ---")
@@ -37,6 +48,12 @@ print(usuarios_sucios_df.head(5))
 print("\n--- CATEGORIAS (Muestra) ---")
 print(categorias_sucias_df.head(5))
 
+print("\n--- RETOS (Muestra) ---")
+print(retos_sucios_df.head(5))
+
+print("\n--- PRIORIDADES (Muestra) ---")
+print(prioridades_sucias_df.head(5))
+
 
 print("\n***** EXPORTACION O GENERACION DE ARCHIVOS CON DATOS *****")
 # Exportar las entidades que ya tienen su script de exportación listo:
@@ -46,9 +63,14 @@ print(f"Empresas exportadas: {len(rutas_empresas)} archivos en data/crudo")
 rutas_registros = exportar_registros(registros_sucios_df)
 print(f"Registros exportados: {len(rutas_registros)} archivos en data/crudo")
 
-# NOTA: A medida que cada compañero termine su archivo en 'exportaciones/',
-# se conectará aquí para exportar todo desde main:
-# rutas_usuarios = exportar_usuarios(usuarios_sucios_df)
-# rutas_categorias = exportar_categorias(categorias_sucias_df)
+rutas_categorias = exportar_categorias(categorias_sucias_df)
+print(f"Categorias exportadas: {len(rutas_categorias)} archivos en data/crudo")
+
+rutas_usuarios = exportar_usuarios(usuarios_sucios_df)
+print(f"Usuarios exportados: {len(rutas_usuarios)} archivos en data/crudo")
+
+rutas_prioridades = exportar_prioridades(prioridades_sucias_df)
+print(f"Prioridades exportadas: {len(rutas_prioridades)} archivos en data/crudo")
+
 
 print("\nArchivos creados exitosamente.")

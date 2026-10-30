@@ -9,3 +9,6 @@ __pycache__/
 # Config local de VS Code: la ruta del intérprete difiere por SO,
 # así que no la compartimos (cada quien selecciona su intérprete, ver README).
 .vscode/
+
+# Archivos de datos generados localmente
+data/

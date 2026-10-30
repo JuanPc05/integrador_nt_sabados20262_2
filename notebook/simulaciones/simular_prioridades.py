@@ -35,16 +35,23 @@ def numero_en_palabra(num):
     return mapa.get(num, num)
 
 # 4. Función generadora de datos limpios
-def generar_prioridades(numero_filas):
+def generar_datos_limpios(numero_filas=FILAS):
+    random.seed(42)
+    Faker.seed(42)
+    LOCALE.seed_instance(42)
+
+    duplicados = int(numero_filas * 0.08)
+    base = numero_filas - duplicados
+
     datos_limpios = []
     
     # Aquí solo nos preocupamos por generar la data perfecta
-    for _ in range(numero_filas):
+    for _ in range(base):
         nombre = random.choice(list(NIVELES.keys()))
         nivel = NIVELES[nombre]
 
         datos_limpios.append({
-            "id": str(uuid.uuid4()),
+            "id": LOCALE.uuid4(),
             "nombre": nombre,
             "nivel": nivel,
             "dias_max_respuesta": DIAS[nivel]
@@ -53,24 +60,28 @@ def generar_prioridades(numero_filas):
     return datos_limpios
 
 # 5. Función principal para ensuciar los datos simulados
-def ensuciar(datos_df):
+def ensuciar(datos_df, n=FILAS):
     datos_df = datos_df.copy()
 
-    # --- Ensuciar nombres ---
-    datos_df["nombre"] = datos_df["nombre"].apply(escribir_mal_nombre)
+    # --- Ensuciar nombres (30% de las filas) ---
+    filas_elegidas = obtener_muestra(datos_df, 0.30)
+    datos_df.loc[filas_elegidas, "nombre"] = datos_df.loc[filas_elegidas, "nombre"].apply(escribir_mal_nombre)
 
     # --- Ensuciar niveles ---
     datos_df["nivel"] = datos_df["nivel"].astype("object")
 
-    # Reutilizamos la misma variable "filas_elegidas" en lugar de los idx_
-    filas_elegidas = obtener_muestra(datos_df, 0.07)
-    datos_df.loc[filas_elegidas, "nivel"] = None
+    # 10% en palabras (antes de pasar a texto o None para que coincida la llave numérica)
+    filas_palabra = obtener_muestra(datos_df, 0.10)
+    datos_df.loc[filas_palabra, "nivel"] = datos_df.loc[filas_palabra, "nivel"].apply(numero_en_palabra)
 
-    filas_elegidas = obtener_muestra(datos_df, 0.15)
-    datos_df.loc[filas_elegidas, "nivel"] = datos_df.loc[filas_elegidas, "nivel"].astype(str)
+    # 15% como texto numérico (de las filas que aún son números enteros)
+    filas_restantes = datos_df.drop(filas_palabra)
+    filas_str = obtener_muestra(filas_restantes, 0.15)
+    datos_df.loc[filas_str, "nivel"] = datos_df.loc[filas_str, "nivel"].astype(str)
 
-    filas_elegidas = obtener_muestra(datos_df, 0.10)
-    datos_df.loc[filas_elegidas, "nivel"] = datos_df.loc[filas_elegidas, "nivel"].apply(numero_en_palabra)
+    # 7% en None (nulos reales, sin que .astype(str) los convierta en "None")
+    filas_nulas = obtener_muestra(datos_df, 0.07)
+    datos_df.loc[filas_nulas, "nivel"] = None
 
     # --- Ensuciar dias_max_respuesta ---
     filas_elegidas = obtener_muestra(datos_df, 0.05)
@@ -80,20 +91,23 @@ def ensuciar(datos_df):
     datos_df.loc[filas_elegidas, "dias_max_respuesta"] = 999                                   
 
     # --- Agregar filas duplicadas (8% del total) ---
-    cantidad_duplicas = int(len(datos_df) * 0.08)
-    df_duplicados = datos_df.sample(n=cantidad_duplicas, random_state=42)
-    datos_df = pd.concat([datos_df, df_duplicados], ignore_index=True)
+    cantidad_duplicas = n - len(datos_df)
+    if cantidad_duplicas > 0:
+        df_duplicados = datos_df.sample(n=cantidad_duplicas, random_state=42)
+        datos_df = pd.concat([datos_df, df_duplicados], ignore_index=True)
 
     return datos_df
 
+
+def generar_prioridades(numero_filas=FILAS):
+    lista_datos = generar_datos_limpios(numero_filas)
+    df_limpio = pd.DataFrame(lista_datos)
+    return ensuciar(df_limpio, n=numero_filas)
+
+
 # 6. Bloque principal (Orquestador)
 if __name__ == "__main__":
-    # Generamos la lista y la pasamos a DataFrame
-    lista_datos = generar_prioridades(FILAS)
-    df_limpio = pd.DataFrame(lista_datos) 
-    
-    # Ensuciamos el DataFrame
-    df_sucio = ensuciar(df_limpio)
+    df_sucio = generar_prioridades(FILAS)
     
     print("Shape del DataFrame:", df_sucio.shape)
     print("\nPrimeras filas:\n", df_sucio.head())

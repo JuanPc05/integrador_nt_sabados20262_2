@@ -11,9 +11,9 @@ LOCALE = Faker("es_CO")
 
 # 2. Identificar datos a simular y colecciones base
 ESTADOS = ("abierto", "en_curso", "cerrado")
-IDS_EMPRESA = tuple(str(uuid.uuid4()) for _ in range(10))
-IDS_CATEGORIA = tuple(str(uuid.uuid4()) for _ in range(10))
-IDS_PRIORIDAD = tuple(str(uuid.uuid4()) for _ in range(3))
+IDS_EMPRESA = tuple(LOCALE.uuid4() for _ in range(10))
+IDS_CATEGORIA = tuple(LOCALE.uuid4() for _ in range(10))
+IDS_PRIORIDAD = tuple(LOCALE.uuid4() for _ in range(3))
 
 # 3. Constante de simulación
 FILAS = 500
@@ -32,12 +32,21 @@ def escribir_mal(texto):
 
 
 # 5. Generación de datos base
-def generar_datos(numero_filas=FILAS):
+def generar_datos(numero_filas=FILAS, ids_empresa=None, ids_categoria=None, ids_prioridad=None):
     random.seed(42)
+    Faker.seed(42)
     LOCALE.seed_instance(42)
+
+    lista_empresas = list(ids_empresa) if ids_empresa is not None else list(IDS_EMPRESA)
+    lista_categorias = list(ids_categoria) if ids_categoria is not None else list(IDS_CATEGORIA)
+    lista_prioridades = list(ids_prioridad) if ids_prioridad is not None else list(IDS_PRIORIDAD)
+
+    duplicados = int(numero_filas * 0.05)
+    base = numero_filas - duplicados
+
     filas = []
 
-    for _ in range(numero_filas):
+    for _ in range(base):
         # Generar fechas iniciales
         fecha_inicio = LOCALE.date_between(start_date="-1y", end_date="+3m")
         duracion = random.randint(15, 180)
@@ -45,15 +54,15 @@ def generar_datos(numero_filas=FILAS):
 
         filas.append(
             {
-                "id": str(uuid.uuid4()),
+                "id": LOCALE.uuid4(),
                 "nombre": LOCALE.sentence(nb_words=6).rstrip("."),
                 "descripcion": LOCALE.sentence(nb_words=12),
                 "fecha_inicio": fecha_inicio.strftime("%Y-%m-%d"),
                 "fecha_fin": fecha_fin.strftime("%Y-%m-%d"),
                 "estado": random.choice(ESTADOS),
-                "id_empresa": random.choice(IDS_EMPRESA),
-                "id_categoria": random.choice(IDS_CATEGORIA),
-                "id_prioridad": random.choice(IDS_PRIORIDAD),
+                "id_empresa": random.choice(lista_empresas),
+                "id_categoria": random.choice(lista_categorias),
+                "id_prioridad": random.choice(lista_prioridades),
             }
         )
 
@@ -61,7 +70,7 @@ def generar_datos(numero_filas=FILAS):
 
 
 # 6. Función principal para ensuciar datos (Lógica del profesor)
-def ensuciar(datos_df):
+def ensuciar(datos_df, n=FILAS):
     datos_df = datos_df.copy()
 
     # 1. nombre: 10% con espacios sobrantes
@@ -103,16 +112,23 @@ def ensuciar(datos_df):
     ).dt.strftime("%Y-%m-%d")
 
     # 7. duplicados: 5% de filas repetidas tal cual
-    filas_duplicadas = datos_df.sample(frac=0.05, random_state=42)
-    datos_df = pd.concat([datos_df, filas_duplicadas], ignore_index=True)
+    duplicados = n - len(datos_df)
+    if duplicados > 0:
+        filas_duplicadas = datos_df.sample(n=duplicados, random_state=42)
+        datos_df = pd.concat([datos_df, filas_duplicadas], ignore_index=True)
 
     return datos_df
 
 
 # 7. Función integradora solicitada por la Historia de Usuario
-def generar_retos(n=FILAS) -> pd.DataFrame:
-    df_base = generar_datos(numero_filas=n)
-    return ensuciar(df_base)
+def generar_retos(n=FILAS, ids_empresa=None, ids_categoria=None, ids_prioridad=None) -> pd.DataFrame:
+    df_base = generar_datos(
+        numero_filas=n,
+        ids_empresa=ids_empresa,
+        ids_categoria=ids_categoria,
+        ids_prioridad=ids_prioridad,
+    )
+    return ensuciar(df_base, n=n)
 
 
 # 8. Punto de entrada para pruebas

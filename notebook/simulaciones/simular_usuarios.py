@@ -1,14 +1,15 @@
 import random
 import uuid
+import pandas as pd
 from faker import Faker
 
-#1. configurar el faker a la region que necesito
-fake=Faker("es_CO")
-
-#2. Sembrar semillas para tener coherencia en los datos
+#1. Sembrar semillas para tener coherencia en los datos
 #simulados
-Faker.seed(42)
 random.seed(42)
+Faker.seed(42)
+
+#2. configurar el faker a la region que necesito
+fake=Faker("es_CO")
 
 #3. Identifico los datos que debo simular
 #id (texto (UUID))
@@ -27,11 +28,18 @@ FILAS=400
 
 #6. Construyo una funcion para generar los N datos pedidos (LIMPIOS)
 def generar_datos_limpios(numero_datos=FILAS):
+    random.seed(42)
+    Faker.seed(42)
+    fake.seed_instance(42)
+
+    duplicados = int(numero_datos * 0.05)
+    base = numero_datos - duplicados
+
     filas=[]
-    for _ in range(numero_datos):
+    for _ in range(base):
 
         filas.append({
-            "id":str(uuid.uuid4()),
+            "id":fake.uuid4(),
             "nombre":fake.name(),
             "correo":fake.email(),
             "contrasena_hash":fake.sha256(),
@@ -51,7 +59,7 @@ def generar_muestra(datos,porcentaje):
 
 #2. Crear una funcion para escribir mal un texto
 def escribir_mal(texto):
-    variantes=[texto.lower(),f" {texto.title()} ", texto.capitalize()]
+    variantes=[texto.lower(), f" {texto} ", texto.capitalize()]
     return random.choice(variantes)
 
 #3. Convertir boolenos en textos
@@ -61,7 +69,7 @@ def convertir_booleano_texto(valor):
     return random.choice(["NO", "0"])
 
 #4. Funcion para ensuciar los datos
-def ensuciar(datos_df):
+def ensuciar(datos_df, n=FILAS):
     datos_df=datos_df.copy()
     #nombre: 10% con espacios sobrantes, 8% Mayuscula
     filas_elegidas=generar_muestra(datos_df,0.10)
@@ -97,5 +105,23 @@ def ensuciar(datos_df):
     filas_elegidas=generar_muestra(datos_df,0.3)
     datos_df.loc[filas_elegidas,"activo"]=datos_df.loc[filas_elegidas,"activo"].map(convertir_booleano_texto)
 
+    #duplicados: 5% de filas repetidas tal cual
+    duplicados = n - len(datos_df)
+    if duplicados > 0:
+        copias = datos_df.sample(n=duplicados, random_state=42)
+        datos_df = pd.concat([datos_df, copias], ignore_index=True)
+
     #devuelvo la tabla ya sucia
     return datos_df
+
+
+def generar_usuarios(n=FILAS):
+    df_limpio = pd.DataFrame(generar_datos_limpios(n))
+    return ensuciar(df_limpio, n=n)
+
+
+if __name__ == "__main__":
+    df = generar_usuarios(FILAS)
+    print(df.shape)
+    print(df.head())
+    print(df.isna().sum())
