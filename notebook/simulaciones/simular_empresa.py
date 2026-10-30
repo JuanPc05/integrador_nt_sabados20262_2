@@ -110,8 +110,6 @@ def generar_empresas(n=300):
 
     return df
 
-    return df
-
 
 # 4. Bloque principal
 if __name__ == "__main__":
@@ -120,11 +118,6 @@ if __name__ == "__main__":
     print(df.head())
     print(df.isna().sum())
 
-
-# 5 Convirtiendo los datos generado en un dataFrame con PANDAS. 
-tabla_ordenada_empresas = generar_empresas(FILAS)
-
-
-
-#6 Probar la función
-print (tabla_ordenada_empresas)
+    # 5. Probar y mostrar DataFrame generado
+    tabla_ordenada_empresas = generar_empresas(FILAS)
+    print(tabla_ordenada_empresas)
