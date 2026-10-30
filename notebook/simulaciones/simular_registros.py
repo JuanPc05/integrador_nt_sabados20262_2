@@ -16,16 +16,26 @@ IDS_RETO = [fake.uuid4() for _ in range(100)]
 ESTADOS_SUCIOS = ["inscrito", "EN PROCESO", " Finalizado "]
 
 
-def generar_datos_limpios(n=800):
+def generar_datos_limpios(n=FILAS, ids_usuario=None, ids_reto=None):
+    random.seed(42)
+    Faker.seed(42)
+    fake.seed_instance(42)
+
+    lista_usuarios = list(ids_usuario) if ids_usuario is not None else IDS_USUARIO
+    lista_retos = list(ids_reto) if ids_reto is not None else IDS_RETO
+
+    duplicados = int(n * 0.05)
+    base = n - duplicados
+
     registros = []
-    for _ in range(n):
+    for _ in range(base):
         registros.append({
-            "id": str(uuid.uuid4()),
+            "id": fake.uuid4(),
             "fecha_registro": fake.date_time_between(start_date="-1y", end_date="now"),
             "observacion": fake.sentence(nb_words=10),
             "estado": random.choice(ESTADOS),
-            "id_usuario": random.choice(IDS_USUARIO),
-            "id_reto": random.choice(IDS_RETO),
+            "id_usuario": random.choice(lista_usuarios),
+            "id_reto": random.choice(lista_retos),
         })
     return pd.DataFrame(registros)
 
@@ -34,7 +44,7 @@ def obtener_muestra(datos_df, porcentaje):
     return datos_df.sample(frac=porcentaje, random_state=random.randint(0, 999)).index
 
 
-def ensuciar(datos_df):
+def ensuciar(datos_df, n=FILAS):
     datos_df = datos_df.copy()
 
     # fecha en dos formatos
@@ -57,16 +67,17 @@ def ensuciar(datos_df):
     otras_filas = datos_df.drop(filas_elegidas).sample(n=len(filas_elegidas), random_state=random.randint(0, 999))
     datos_df.loc[filas_elegidas, ["id_usuario", "id_reto"]] = otras_filas[["id_usuario", "id_reto"]].values
 
-    # filas repetidas tal cual
-    filas_elegidas = obtener_muestra(datos_df, 0.05)
-    otras_filas = datos_df.drop(filas_elegidas).sample(n=len(filas_elegidas), random_state=random.randint(0, 999))
-    datos_df.loc[filas_elegidas] = otras_filas.values
+    # filas repetidas tal cual (5% del total)
+    duplicados = n - len(datos_df)
+    if duplicados > 0:
+        copias = datos_df.sample(n=duplicados, random_state=42)
+        datos_df = pd.concat([datos_df, copias], ignore_index=True)
 
     return datos_df
 
 
-def generar_registros(n=800):
-    df = ensuciar(generar_datos_limpios(n))
+def generar_registros(n=FILAS, ids_usuario=None, ids_reto=None):
+    df = ensuciar(generar_datos_limpios(n, ids_usuario=ids_usuario, ids_reto=ids_reto), n=n)
     return df
 
 

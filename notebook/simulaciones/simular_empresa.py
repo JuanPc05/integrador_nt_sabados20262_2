@@ -29,7 +29,11 @@ LOCALE = Faker("es_CO")
 
 
 # 3. Función generadora
-def generar_empresas(n=300):
+def generar_empresas(n=FILAS):
+    random.seed(42)
+    Faker.seed(42)
+    LOCALE.seed_instance(42)
+
     empresas = []
 
     # 3.1 Generar 5% menos filas (para luego agregar los duplicados)
@@ -38,7 +42,7 @@ def generar_empresas(n=300):
 
     for _ in range(base):
         empresas.append({
-            "id": str(uuid.uuid4()),
+            "id": LOCALE.uuid4(),
             "nombre": LOCALE.company(),
             "nit": LOCALE.numerify("#########-#"),
             "sector": random.choice(SECTORES),
@@ -86,7 +90,7 @@ def generar_empresas(n=300):
         if random.random() < 0.06:
             df.at[i, "correo"] = df.at[i, "correo"].replace("@", "")
 
-        # 3.7 Ensuciar telefono: tres formatos mezclados
+    # 3.7 Ensuciar telefono: tres formatos mezclados
     for i in df.index:
         tel = df.at[i, "telefono"]
         formato = random.choice(["plano", "espacios", "internacional"])
@@ -97,6 +101,12 @@ def generar_empresas(n=300):
 
     # 3.8 Antes de ensuciar activa, cambiar el dtype a object
     df["activa"] = df["activa"].astype(object)
+    for i in df.index:
+        if random.random() < 0.25:
+            if df.at[i, "activa"]:
+                df.at[i, "activa"] = random.choice(["SI", "1"])
+            else:
+                df.at[i, "activa"] = random.choice(["NO", "0"])
 
     # 3.9 5% de duplicados exactos
     copias = df.sample(n=duplicados, random_state=42)
@@ -117,7 +127,3 @@ if __name__ == "__main__":
     print(df.shape)
     print(df.head())
     print(df.isna().sum())
-
-    # 5. Probar y mostrar DataFrame generado
-    tabla_ordenada_empresas = generar_empresas(FILAS)
-    print(tabla_ordenada_empresas)
