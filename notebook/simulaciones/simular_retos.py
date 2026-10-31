@@ -1,5 +1,6 @@
 import random
 import uuid
+from datetime import timedelta
 from faker import Faker
 import pandas as pd
 
@@ -27,7 +28,11 @@ def obtener_muestra(datos, porcentaje):
 
 def escribir_mal(texto):
     """Aplica variaciones de formato y espacios al texto."""
-    variantes = [texto.lower(), texto.upper(), f" {texto} "]
+    variantes = [
+        texto.lower(),
+        texto.replace("_", " ").upper(),
+        f" {texto.capitalize()} ",
+    ]
     return random.choice(variantes)
 
 
@@ -37,11 +42,13 @@ def generar_datos(numero_filas=FILAS):
     LOCALE.seed_instance(42)
     filas = []
 
-    for _ in range(numero_filas):
+    filas_base = numero_filas - round(numero_filas * 0.05)  # 475 si n=500
+
+    for _ in range(filas_base):
         # Generar fechas iniciales
         fecha_inicio = LOCALE.date_between(start_date="-1y", end_date="+3m")
         duracion = random.randint(15, 180)
-        fecha_fin = fecha_inicio + pd.Timedelta(days=duracion)
+        fecha_fin = fecha_inicio + timedelta(days=duracion)
 
         filas.append(
             {
@@ -95,15 +102,14 @@ def ensuciar(datos_df):
     # 6. fecha_fin: 5% ANTERIOR a fecha_inicio (error lógico)
     filas_disponibles = datos_df[datos_df["fecha_fin"].notna()]
     filas_elegidas = obtener_muestra(filas_disponibles, 0.05)
-    f_inicio_dt = pd.to_datetime(
-        datos_df.loc[filas_elegidas, "fecha_inicio"], format="mixed"
-    )
+    # Se usa fechas_dt (fechas reales) y no el texto mezclado, para no confundir DD/MM con MM/DD
     datos_df.loc[filas_elegidas, "fecha_fin"] = (
-        f_inicio_dt - pd.to_timedelta(15, unit="D")
+        fechas_dt.loc[filas_elegidas] - pd.to_timedelta(15, unit="D")
     ).dt.strftime("%Y-%m-%d")
 
     # 7. duplicados: 5% de filas repetidas tal cual
-    filas_duplicadas = datos_df.sample(frac=0.05, random_state=42)
+    # Se generan n - 5% filas base y se copian 5% de n, para que el total sea n
+    filas_duplicadas = datos_df.sample(n=round(len(datos_df) * 0.05 / 0.95), random_state=42)
     datos_df = pd.concat([datos_df, filas_duplicadas], ignore_index=True)
 
     return datos_df
