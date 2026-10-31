@@ -39,7 +39,8 @@ def generar_categorias(n: int = 250) -> pd.DataFrame:
     # 2. Fijar semillas para reproducibilidad
     Faker.seed(42)
     random.seed(42)
-    fake = Faker("es_ES")
+    fake = Faker("es_CO")
+    fake.seed_instance(42)
 
     # 3. Calcular porcentajes (8% de duplicados exactos sobre el total)
     n_duplicados = int(n * 0.08)
@@ -49,9 +50,9 @@ def generar_categorias(n: int = 250) -> pd.DataFrame:
     
     # 4. Generación base de datos únicos
     for _ in range(n_unicos):
-        # Seleccionamos la categoría base y la ensuciamos
+        # Seleccionamos la categoría base y ensuciamos el 35% de los nombres
         cat_base = random.choice(CATEGORIAS)
-        nombre = _ensuciar_categorias(cat_base)
+        nombre = _ensuciar_categorias(cat_base) if random.random() < 0.35 else cat_base
         
         # Ensuciar descripción (15% en None)
         descripcion = None if random.random() < 0.15 else fake.sentence(nb_words=8)
@@ -59,9 +60,9 @@ def generar_categorias(n: int = 250) -> pd.DataFrame:
         # Ensuciar área responsable (10% en None)
         area_responsable = None if random.random() < 0.10 else random.choice(AREAS)
         
-        # CORRECCIÓN: uuid4() ejecutado correctamente con paréntesis
+        # CORRECCIÓN: fake.uuid4() para reproducibilidad con la semilla
         registros.append({
-            "id": str(uuid.uuid4()),
+            "id": fake.uuid4(),
             "nombre": nombre,
             "descripcion": descripcion,
             "area_responsable": area_responsable
