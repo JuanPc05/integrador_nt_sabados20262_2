@@ -5,16 +5,16 @@ from pathlib import Path
 # 1. Rutas y nombres
 NOMBRE_ENTIDAD = "retos"
 
-# El script está en 'src/'. La raíz del proyecto está 1 nivel arriba.
-CARPETA_PROYECTO = Path(__file__).resolve().parents[1]
+# El script está en 'notebook/exportaciones/'. La raíz del proyecto está 2 niveles arriba.
+CARPETA_PROYECTO = Path(__file__).resolve().parents[2]
 CARPETA_CRUDO = CARPETA_PROYECTO / "data" / "crudo"
 
-# Permite ejecutar directamente: python src/exportar_retos.py
+# Permite ejecutar directamente: python notebook/exportaciones/exportar_retos.py
 if str(CARPETA_PROYECTO) not in sys.path:
     sys.path.insert(0, str(CARPETA_PROYECTO))
 
 # Se importa la generación; NO se copia su código
-from src.simular_retos import generar_retos, FILAS
+from notebook.simulaciones.simular_retos import generar_retos, FILAS
 
 
 # 2. Funciones para guardar los archivos
