@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 from pathlib import Path
 
 # 1. Rutas y nombres
@@ -9,18 +9,18 @@ NOMBRE_ENTIDAD = "retos"
 CARPETA_PROYECTO = Path(__file__).resolve().parents[2]
 CARPETA_CRUDO = CARPETA_PROYECTO / "data" / "crudo"
 
-# Asegurar que la raíz del proyecto esté en sys.path para permitir ejecución directa
+# Permite ejecutar directamente: python notebook/exportaciones/exportar_retos.py
 if str(CARPETA_PROYECTO) not in sys.path:
     sys.path.insert(0, str(CARPETA_PROYECTO))
 
-# Importamos desde la carpeta correcta de simulaciones según tu estructura
+# Se importa la generación; NO se copia su código
 from notebook.simulaciones.simular_retos import generar_retos, FILAS
 
 
 # 2. Funciones para guardar los archivos
 def preparar_carpeta(carpeta_path):
     os.makedirs(carpeta_path, exist_ok=True)
-    return carpeta_path
+    return Path(carpeta_path)
 
 
 def exportar_csv(datos_df, carpeta, nombre_archivo):
