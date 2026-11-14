@@ -40,7 +40,15 @@ def consulta_5_resumen_dias(df):
     ruta = CARPETA_SALIDA / "prioridades_consulta_5.csv"
     resumen.to_csv(ruta, encoding="utf-8")
 
-if __name__ == "__main__":
+def ejecutar_consultas():
+    """
+    Función principal que lee los datos limpios y ejecuta todas las consultas.
+    Esta es la función que importa main.py.
+    """
+    if not RUTA_LIMPIO.exists():
+        print(f"Error: No se encontró el archivo limpio en:\n{RUTA_LIMPIO}")
+        return
+        
     df_limpio = pd.read_csv(RUTA_LIMPIO)
     
     consulta_1_ordenadas(df_limpio)
@@ -48,3 +56,7 @@ if __name__ == "__main__":
     consulta_3_conteo(df_limpio)
     consulta_4_agrupacion_nivel(df_limpio)
     consulta_5_resumen_dias(df_limpio)
+
+# Punto de entrada estandarizado para pruebas aisladas
+if __name__ == "__main__":
+    ejecutar_consultas()
