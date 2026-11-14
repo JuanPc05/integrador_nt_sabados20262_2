@@ -96,3 +96,12 @@ def main():
 # Punto de entrada estandarizado
 if __name__ == "__main__":
     main()
+
+print("\n***** LIMPIEZA, CONSULTAS Y REPORTE DE REGISTROS *****")
+from notebook.limpieza.limpiar_registros import limpiar_registros
+from notebook.consultas.consultas_registros import ejecutar_consultas
+from notebook.reportes.reporte_registros import crear_reporte
+
+limpiar_registros()
+ejecutar_consultas()
+crear_reporte()
