@@ -86,3 +86,12 @@ reportar_prioridades()
 print("Reportes graficos de prioridades guardados en la carpeta reportes/")
 
 print("\nPipeline ejecutado exitosamente.")
+
+print("\n***** LIMPIEZA, CONSULTAS Y REPORTE DE REGISTROS *****")
+from notebook.limpieza.limpiar_registros import limpiar_registros
+from notebook.consultas.consultas_registros import ejecutar_consultas
+from notebook.reportes.reporte_registros import crear_reporte
+
+limpiar_registros()
+ejecutar_consultas()
+crear_reporte()
