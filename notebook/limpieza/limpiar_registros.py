@@ -43,12 +43,16 @@ def quitar_duplicados_exactos(df):
     return df
 
 
-# convierto la fecha aunque venga en dos formatos; los que no se puedan convertir quedan en NaT
+# convierto la fecha leyendo cada formato por separado: las ISO (2026-11-05 10:00:00) y las
+# latinas (05/11/2026 10:00). Si las mezclo con dayfirst=True, pandas voltea día y mes en las ISO
 def convertir_fechas(df):
     df = df.copy()
-    df["fecha_registro"] = pd.to_datetime(
-        df["fecha_registro"], format="mixed", dayfirst=True, errors="coerce"
-    )
+    texto = df["fecha_registro"].astype("string").str.strip()
+    es_iso = texto.str.match(r"^\d{4}-\d{2}-\d{2}")
+    fechas = pd.Series(pd.NaT, index=df.index, dtype="datetime64[ns]")
+    fechas[es_iso] = pd.to_datetime(texto[es_iso], format="%Y-%m-%d %H:%M:%S", errors="coerce")
+    fechas[~es_iso] = pd.to_datetime(texto[~es_iso], format="%d/%m/%Y %H:%M", errors="coerce")
+    df["fecha_registro"] = fechas
     print("Fechas que no se pudieron convertir (NaT):", int(df["fecha_registro"].isna().sum()))
     return df
 
