@@ -1,19 +1,16 @@
 import sys
 from pathlib import Path
 
-# 1. Rutas y nombres
 NOMBRE_ENTIDAD = "prioridades"
 CARPETA_PROYECTO = Path(__file__).resolve().parents[2]
 CARPETA_CRUDO = CARPETA_PROYECTO / "data" / "crudo"
 
-# Asegurar que la raíz del proyecto esté en sys.path para permitir ejecución directa
 if str(CARPETA_PROYECTO) not in sys.path:
     sys.path.insert(0, str(CARPETA_PROYECTO))
 
-from notebook.simulaciones.simular_prioridades import generar_prioridades, FILAS
+from notebook.simulaciones.simular_prioridades import generar_prioridades
 
 
-# 2. Funciones para guardar los archivos
 def preparar_carpeta(carpeta):
     carpeta.mkdir(parents=True, exist_ok=True)
     return carpeta
@@ -37,7 +34,6 @@ def exportar_json(datos_df, carpeta, nombre_archivo):
     return ruta
 
 
-# 3. Crear los tres archivos
 def exportar_prioridades(datos_df_sucio):
     nombre = f"{NOMBRE_ENTIDAD}_sucio"
     return [
@@ -47,11 +43,9 @@ def exportar_prioridades(datos_df_sucio):
     ]
 
 
-# 4. Ejecutar
 if __name__ == "__main__":
-    df = generar_prioridades(FILAS)
+    df = generar_prioridades()
     rutas = exportar_prioridades(df)
 
     for ruta in rutas:
         print(f"{ruta.relative_to(CARPETA_PROYECTO)} | shape: {df.shape}")
-
