@@ -19,6 +19,9 @@ from notebook.exportaciones.exportar_prioridades import exportar_prioridades
 from notebook.limpieza.limpiar_prioridades import limpiar_prioridades
 from notebook.consultas.consultas_prioridades import ejecutar_consultas as consultar_prioridades
 from notebook.reportes.reporte_prioridades import generar_reportes as reportar_prioridades
+from notebook.limpieza.limpiar_empresas import limpiar_empresas  # EMPRESAS (nuevo)
+from notebook.consultas.consultas_empresas import ejecutar_consultas as consultar_empresas  # EMPRESAS (nuevo)
+from notebook.reportes.reporte_empresas import crear_reporte as reportar_empresas  # EMPRESAS (nuevo)
 
 
 def main():
@@ -79,16 +82,22 @@ def main():
     print("\n***** LIMPIEZA DE DATOS *****")
     limpiar_prioridades()
     print("Prioridades limpiadas y guardadas en data/limpio")
+    limpiar_empresas()  # EMPRESAS (nuevo)
+    print("Empresas limpiadas y guardadas en data/limpio")  # EMPRESAS (nuevo)
 
 
     print("\n***** CONSULTAS *****")
     consultar_prioridades()
     print("Consultas de prioridades ejecutadas y guardadas en data/limpio")
+    consultar_empresas()  # EMPRESAS (nuevo)
+    print("Consultas de empresas ejecutadas y guardadas en data/limpio")  # EMPRESAS (nuevo)
 
 
     print("\n***** REPORTES VISUALES *****")
     reportar_prioridades()
     print("Reportes gráficos de prioridades guardados en la carpeta reportes/")
+    reportar_empresas()  # EMPRESAS (nuevo)
+    print("Reportes gráficos de empresas guardados en la carpeta reportes/")  # EMPRESAS (nuevo)
 
     print("\nPipeline ejecutado exitosamente.")
 
