@@ -108,15 +108,16 @@ def generar_empresas(n=FILAS):
             else:
                 df.at[i, "activa"] = random.choice(["NO", "0"])
 
-    # 3.9 5% de duplicados exactos
-    copias = df.sample(n=duplicados, random_state=42)
-    df = pd.concat([df, copias], ignore_index=True)
-
-    # 3.10 3% de nit repetidos entre empresas distintas
+    # 3.9 3% de nit repetidos entre empresas distintas
+    # (antes de los duplicados, para que las copias sigan siendo idénticas)
     repetidos = int(n * 0.03)
     indices = random.sample(range(base), repetidos * 2)
     for j in range(0, len(indices), 2):
         df.at[indices[j], "nit"] = df.at[indices[j + 1], "nit"]
+
+    # 3.10 5% de duplicados exactos
+    copias = df.sample(n=duplicados, random_state=42)
+    df = pd.concat([df, copias], ignore_index=True)
 
     return df
 
